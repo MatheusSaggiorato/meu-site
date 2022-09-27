@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    background: rgb(22,44,64);
+    background: -moz-linear-gradient(35deg, rgba(22,44,64,1) 8%, rgba(25,59,85,1) 21%, rgba(29,75,107,1) 52%, rgba(37,112,159,1) 77%, rgba(73,139,166,1) 89%);
+    background: -webkit-linear-gradient(35deg, rgba(22,44,64,1) 8%, rgba(25,59,85,1) 21%, rgba(29,75,107,1) 52%, rgba(37,112,159,1) 77%, rgba(73,139,166,1) 89%);
+    background: linear-gradient(35deg, rgba(22,44,64,1) 8%, rgba(25,59,85,1) 21%, rgba(29,75,107,1) 52%, rgba(37,112,159,1) 77%, rgba(73,139,166,1) 89%);
+    background-attachment: fixed;
+}
+
+button {
+    font-size: 15px;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #0D0D0D;
+    color: #fff;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.lottie {
+    width: 80%;
+    height: auto;
+}
