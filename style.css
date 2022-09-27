@@ -1,20 +1,31 @@
 *,
 *::before,
 *::after {
+  margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin: 0;
+    width: 100%;
+    background-color: #0D0D0D;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 70px;
+    border-radius: 10px;
 }
 
 body {
     margin: 0;
-    padding: 20px;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    color: #fff;
-    text-transform: uppercase;
     background: rgb(22,44,64);
     background: -moz-linear-gradient(35deg, rgba(22,44,64,1) 8%, rgba(25,59,85,1) 21%, rgba(29,75,107,1) 52%, rgba(37,112,159,1) 77%, rgba(73,139,166,1) 89%);
     background: -webkit-linear-gradient(35deg, rgba(22,44,64,1) 8%, rgba(25,59,85,1) 21%, rgba(29,75,107,1) 52%, rgba(37,112,159,1) 77%, rgba(73,139,166,1) 89%);
@@ -22,20 +33,52 @@ body {
     background-attachment: fixed;
 }
 
+div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+}
+
 button {
     font-size: 15px;
     border: none;
     padding: 15px;
     border-radius: 10px;
-    background-color: #0D0D0D;
+    background-color: #498BA6;
     color: #fff;
 }
 
 button:hover {
-    transform: scale(1.1);
-}
+    animation: blink 1s infinite linear;
+   }
 
 .lottie {
-    width: 80%;
-    height: auto;
+    height: 100%;
+    width: auto;
+}
+
+@keyframes blink {
+    0% {transform: scale(1);}
+
+    50% {transform: scale(1.05);}
+
+    100% {transform: scale(1);}
+}
+
+@media (max-width: 320px) {
+    div {
+        font-size: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    img {
+        width: 50px;
+    }
 }
