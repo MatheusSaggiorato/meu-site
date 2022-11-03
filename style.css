@@ -1,81 +1,218 @@
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Thin.woff);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Light.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Regular.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Medium.woff);
+    font-weight: 500;
+}
+
+@font-face { 
+    font-family: Roboto;
+    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Bold.woff);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Black.woff);
+    font-weight: 900;
+}
+
 *,
 *::before,
 *::after {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
     margin: 0;
-    width: 100%;
-    background-color: #0D0D0D;
-    padding: 10px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-img {
-    width: 70px;
-    border-radius: 10px;
+:root {
+    --first-blue: #162C40;
+    --second-blue: #2675A6;
+    --third-blue: #498BA6;
+    --fourth-blue: #B4D2D9;
+    --dark-theme: #0D0D0D;
+    --light-theme: #FAFBFD;
 }
 
 body {
-    margin: 0;
-    min-height: 100vh;
-    background: rgb(22,44,64);
-    background: -moz-linear-gradient(35deg, rgba(22,44,64,1) 8%, rgba(25,59,85,1) 21%, rgba(29,75,107,1) 52%, rgba(37,112,159,1) 77%, rgba(73,139,166,1) 89%);
-    background: -webkit-linear-gradient(35deg, rgba(22,44,64,1) 8%, rgba(25,59,85,1) 21%, rgba(29,75,107,1) 52%, rgba(37,112,159,1) 77%, rgba(73,139,166,1) 89%);
-    background: linear-gradient(35deg, rgba(22,44,64,1) 8%, rgba(25,59,85,1) 21%, rgba(29,75,107,1) 52%, rgba(37,112,159,1) 77%, rgba(73,139,166,1) 89%);
-    background-attachment: fixed;
+    background-color: var(--light-theme);
+    overflow-x: hidden;
+    background-image: url(./assets/images/wallpaper3.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
 }
 
-div {
-    padding: 15px;
+header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    color: #fff;
+    padding: 0.3rem 2rem;
+    width: 100%;
+    background-color: transparent;
+    font-size: 0.75rem;
+    position: fixed;
 }
 
-button {
-    padding: 0.8em 1.8em;
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.menu, a {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
     position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-    background-color: #498BA6;
-    font-size: 15px;
-    transition: .3s;
-    z-index: 1;
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 1.5px;
 }
 
-button::before {
-    content: '';
-    width: 0;
-    height: 350%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    background: #162C40;
-    transition: .5s ease;
+.menu li a {
+    text-decoration: none;
+    padding: 5px 10px;
     display: block;
-    z-index: -1;
-   }
-   
-   button:hover::before {
-    width: 105%;
-   }
+    color: var(--light-theme);
+}
 
-.lottie {
-    height: 100%;
-    width: auto;
+.menu li a:focus,
+.menu li a:hover {
+    color: var(--second-blue);
+    background-color: var(--light-theme);
+    border-radius: 5px;
+}
+
+.menu li ul {
+    position: absolute;
+    background-color: var(--dark-theme);
+    border-radius: 5px;
+    border: 1px solid var(--light-theme);
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li:hover ul,
+.menu li.hover ul {
+    display: block;
+}
+
+.menu li ul li {
+    display: block;
+    width: 10rem;
+    margin: 5px;
+}
+
+.btn-whatsapp {
+    position: relative;
+    padding: 5px 20px;
+    margin-left: 1rem;
+    outline: none;
+    border: 2px solid var(--second-blue);
+    font-size: 0.875rem;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.45s;
+    transition-delay: 0s;
+    background-color: var(--first-blue);
+    color: var(--light-theme);
+}
+
+.btn-whatsapp:hover {
+    transition-delay: 1.0s;
+    box-shadow: 0 0 10px var(--second-blue),
+    0 0 20px var(--second-blue),
+    0 0 40px var(--second-blue), 
+    0 0 80px var(--second-blue), 
+    0 0 100px var(--second-blue);
+}
+
+.btn-whatsapp span {
+    position: relative;
+    z-index: 100;
+}
+
+.btn-whatsapp::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 2px;
+    background: var(--second-blue);
+    box-shadow: 5px -8px 0 var(--second-blue),
+        5px 8px 0 var(--second-blue);
+    transition: width 0.5s,
+        left 0.5s,
+        height 0.5s,
+        box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.btn-whatsapp:hover::before {
+    width: 60%;
+    height: 110%;
+    left: -2px;
+    box-shadow: 5px 0 0 var(--second-blue),
+        5px 0 0 var(--second-blue);
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+.btn-whatsapp::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 2px;
+    background: var(--second-blue);
+    box-shadow: -5px -8px 0 var(--second-blue),
+        -5px 8px 0 var(--second-blue);
+    transition: width 0.5s, right 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.btn-whatsapp:hover::after {
+    width: 60%;
+    height: 110%;
+    right: -2px;
+    box-shadow: -5px 0 0 var(--second-blue), -5px 0 0 var(--second-blue);
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+.main-container {
+    padding: 40px;
+}
+
+.title {
+    color: var(--light-theme);
+    margin-top: 40px;
+}
+
+.first-image {
+    height: 100vh;
 }
