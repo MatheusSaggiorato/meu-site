@@ -50,14 +50,15 @@
     --fourth-blue: #B4D2D9;
     --dark-theme: #0D0D0D;
     --light-theme: #FAFBFD;
+    --test: rgb(183, 27, 0);
 }
 
 body {
     background-color: var(--light-theme);
-    overflow-x: hidden;
-    background-image: url(./assets/images/wallpaper3.jpg);
+    position: absolute;
+    background-image: url(./assets/images/wallpaper7.png);
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: cover;
 }
 
 header {
@@ -98,19 +99,20 @@ header {
 
 .menu li a:focus,
 .menu li a:hover {
-    color: var(--second-blue);
-    background-color: var(--light-theme);
-    border-radius: 5px;
+    color: var(--light-theme);
+    background-color: var(--second-blue);
+    border-radius: 4px;
 }
 
 .menu li ul {
     position: absolute;
-    background-color: var(--dark-theme);
+    background-color: #1C1C1E;
     border-radius: 5px;
-    border: 1px solid var(--light-theme);
+    color: var(--fourth-blue);
     display: none;
     padding: 0;
     margin: 0;
+    border: 1px solid var(--light-theme);
 }
 
 .menu li:hover ul,
@@ -122,6 +124,7 @@ header {
     display: block;
     width: 10rem;
     margin: 5px;
+    border-radius: 5px;
 }
 
 .btn-whatsapp {
@@ -129,24 +132,27 @@ header {
     padding: 5px 20px;
     margin-left: 1rem;
     outline: none;
-    border: 2px solid var(--second-blue);
+    border: 2px solid var(--test);
+    border-radius: 5px;
     font-size: 0.875rem;
     font-weight: 900;
     text-decoration: none;
     letter-spacing: 2px;
     transition: 0.45s;
     transition-delay: 0s;
-    background-color: var(--first-blue);
+    background-color: var(--dark-theme);
     color: var(--light-theme);
+    animation: 3s linear background-changed infinite;
 }
 
 .btn-whatsapp:hover {
     transition-delay: 1.0s;
-    box-shadow: 0 0 10px var(--second-blue),
-    0 0 20px var(--second-blue),
-    0 0 40px var(--second-blue), 
-    0 0 80px var(--second-blue), 
-    0 0 100px var(--second-blue);
+    box-shadow: 0 0 10px var(--test),
+    0 0 20px var(--test),
+    0 0 40px var(--test), 
+    0 0 80px var(--test), 
+    0 0 100px var(--test);
+    animation: none;
 }
 
 .btn-whatsapp span {
@@ -162,9 +168,9 @@ header {
     transform: translateY(-50%);
     width: 15px;
     height: 2px;
-    background: var(--second-blue);
-    box-shadow: 5px -8px 0 var(--second-blue),
-        5px 8px 0 var(--second-blue);
+    background: var(--test);
+    box-shadow: 5px -8px 0 var(--test),
+        5px 8px 0 var(--test);
     transition: width 0.5s,
         left 0.5s,
         height 0.5s,
@@ -176,9 +182,10 @@ header {
     width: 60%;
     height: 110%;
     left: -2px;
-    box-shadow: 5px 0 0 var(--second-blue),
-        5px 0 0 var(--second-blue);
+    box-shadow: 5px 0 0 var(--test),
+        5px 0 0 var(--test);
     transition-delay: 0s, 0.5s, 1s, 1s;
+    border-radius: 5px;
 }
 
 .btn-whatsapp::after {
@@ -189,9 +196,9 @@ header {
     transform: translateY(-50%);
     width: 15px;
     height: 2px;
-    background: var(--second-blue);
-    box-shadow: -5px -8px 0 var(--second-blue),
-        -5px 8px 0 var(--second-blue);
+    background: var(--test);
+    box-shadow: -5px -8px 0 var(--test),
+        -5px 8px 0 var(--test);
     transition: width 0.5s, right 0.5s, height 0.5s, box-shadow 0.5s;
     transition-delay: 1s, 0.5s, 0s, 0s;
 }
@@ -200,19 +207,35 @@ header {
     width: 60%;
     height: 110%;
     right: -2px;
-    box-shadow: -5px 0 0 var(--second-blue), -5px 0 0 var(--second-blue);
+    box-shadow: -5px 0 0 var(--test), -5px 0 0 var(--test);
     transition-delay: 0s, 0.5s, 1s, 1s;
+    border-radius: 5px;
+}
+
+@keyframes background-changed {
+    0% {background-color: var(--dark-theme)}
+    25% {background-color: var(--first-blue);}
+    50% {background-color: var(--second-blue);}
+    75% {background-color: var(--third-blue);}
+    100% {background-color: var(--dark-theme);}
 }
 
 .main-container {
-    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px;
+    margin-top: 150px;
+    width: 100%;
+    border: 1px solid gray;
 }
 
 .title {
     color: var(--light-theme);
-    margin-top: 40px;
+    width: 50%;
 }
 
-.first-image {
-    height: 100vh;
+.lottie {
+    width: 40%;
+    height: auto;
+    border: 1px solid gray;
 }
