@@ -127,7 +127,7 @@ header {
     border-radius: 5px;
 }
 
-.btn-whatsapp {
+.btn-header {
     position: relative;
     padding: 5px 20px;
     margin-left: 1rem;
@@ -145,7 +145,7 @@ header {
     animation: 3s linear background-changed infinite;
 }
 
-.btn-whatsapp:hover {
+.btn-header:hover {
     transition-delay: 1.0s;
     box-shadow: 0 0 10px var(--test),
     0 0 20px var(--test),
@@ -155,12 +155,12 @@ header {
     animation: none;
 }
 
-.btn-whatsapp span {
+.btn-header span {
     position: relative;
     z-index: 100;
 }
 
-.btn-whatsapp::before {
+.btn-header::before {
     content: "";
     position: absolute;
     left: -10px;
@@ -178,7 +178,7 @@ header {
     transition-delay: 1s, 0.5s, 0s, 0s;
 }
 
-.btn-whatsapp:hover::before {
+.btn-header:hover::before {
     width: 60%;
     height: 110%;
     left: -2px;
@@ -188,7 +188,7 @@ header {
     border-radius: 5px;
 }
 
-.btn-whatsapp::after {
+.btn-header::after {
     content: "";
     position: absolute;
     right: -10px;
@@ -203,7 +203,7 @@ header {
     transition-delay: 1s, 0.5s, 0s, 0s;
 }
 
-.btn-whatsapp:hover::after {
+.btn-header:hover::after {
     width: 60%;
     height: 110%;
     right: -2px;
@@ -222,20 +222,38 @@ header {
 
 .main-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     padding: 0px 20px;
     margin-top: 150px;
     width: 100%;
     border: 1px solid gray;
 }
 
-.title {
+.title, .subtitle {
     color: var(--light-theme);
+    width: 50%;
+    text-align: justify;
+}
+
+.subtitle {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.btn-whats-main {
+    margin-top: 50px;
     width: 50%;
 }
 
-.lottie {
-    width: 40%;
-    height: auto;
-    border: 1px solid gray;
+.title::after {
+    content: '|';
+    margin-left: 2px;
+    opacity: 1;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
 }
