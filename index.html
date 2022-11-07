@@ -2,66 +2,109 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <title>Matheus Saggiorato</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/d2e94242a3.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header id="header">
+<body style="background-color: #1C1C1E;">
 
-        <img class="logo" src="./assets/images/logoSemNomeSemFundoCortado.png" alt="logo Matheus Saggiorato">
+  <header id="header">
+    <img class="logo" src="./assets/images/logoSemNomeSemFundoCortado.png" alt="logo Matheus Saggiorato">
 
-        <nav>
-            <ul class="menu">
-                <li><a href="#">SOBRE</a></li>
-                <li><a href="#">NOSSOS SERVIÇOS</a>
-                    <ul>
-                        <li><a href="#">WEB DESIGN</a></li>
-                        <li><a href="#">CRIAÇÃO DE LANGING PAGES</a></li>
-                        <li><a href="#">MANUTENÇÃO DE SITES</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">PORTFÓLIO</a></li>
-                <li><a href="#">LINKS</a></li>
-                <li><a href="#">CONTATOS</a></li>
-                <a href="#" target="_blank"><button class="btn-header"><span>WHATSAPP</span></button></a>
-            </ul>
-        </nav>
-    </header>
+    <nav id="nav">
 
-    <section class="main-container">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
+
+      <ul id="menu" role="menu">
+        <li><a href="#">SOBRE</a></li>
+        <li><a href="#">NOSSOS SERVIÇOS</a>
+          <ul>
+            <li><a href="#">WEB DESIGN</a></li>
+            <li><a href="#">CRIAÇÃO DE LANGING PAGES</a></li>
+            <li><a href="#">MANUTENÇÃO DE SITES</a></li>
+          </ul>
+        </li>
+        <li><a href="#">PORTFÓLIO</a></li>
+        <li><a href="#">LINKS</a></li>
+        <li><a href="#">CONTATOS</a></li>
+        <a href="#" target="_blank"><button class="btn-header"><span>WHATSAPP</span></button></a>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="main-container">
+
+    <span class="type-effect"></span>
 
 
-        <h1 class="title">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's</h1>
-
-            <h2 class="subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                been the industry's</h2>
-
-            <button class="btn-whats-main">QUERO VENDER MAIS</button>
 
 
-        <!--  <lottie-player class="lottie" src="https://lottie.host/d9bec769-cfde-4e50-b5c3-e940f5c2f583/x7JmDi724z.json"
+    <h1 class="title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
+
+    <h1 class="typeit">Trabalhamos com: <span id="typeit"></span></h1>
+
+    <button class="btn-whats-main">QUERO VENDER MAIS</button>
+
+
+    <!--  <lottie-player class="lottie" src="https://lottie.host/d9bec769-cfde-4e50-b5c3-e940f5c2f583/x7JmDi724z.json"
                 background="transparent" speed="1" loop autoplay></lottie-player> -->
 
 
-    </section>
+  </section>
 
 
+  <div class="formContainer">
+    <form action="contatoenvia" method="post" class="form">
+      <input type="hidden" name="resultado" value="7">
+      <input type="text" name="nome" class="form-control" id="name" placeholder="*Nome" data-msg="Campo Obrigátorio"
+        required="required">
+      <input type="email" class="form-control" name="email" id="email" placeholder="*E-mail" data-rule="email"
+        data-msg="Campo obrigatório com e-mail válido" required="required">
+      <input type="tel" class="form-control" name="fone" attrname="telephone1" id="subject" placeholder="*Telefone"
+        data-rule="minlen:4" data-msg="Campo obrigatório" required="required">
+      <textarea class="form-control" name="mensagem" rows="5" data-rule="required" data-msg="Campo obrigatório"
+        placeholder="*Mensagem" required="required"></textarea>
+      <button class="form-button">Enviar</button>
+    </form>
+  </div>
+  </section>
 
+  <a href="https://api.whatsapp.com/send?phone=5554999748017&text=Texto%20aqui" target="_blank">
+    <img class="whatsapp-fixed" src="./assets/images/whatsappgrande.webp" alt="whatsapp logo">
+  </a>
 
+  <button onclick="topFunction()" id="backToTop" title="Go to top"></button>
 
-    <!-- 
+  <footer class="main-footer"><i class="bi bi-whatsapp"></i>
+    <p class="copy-footer">&#169; 2022 Matheus Saggiorato - Passo Fundo - RS</p>
+    <a class="termos-footer" href="#">termos de uso</a>
+    <a class="termos-footer" href="#">Política de privacide</a>
+
+  </footer>
+
+  <!-- 
         <lottie-player class="lottie"
          src="https://assets5.lottiefiles.com/private_files/lf30_vnbcd4ev.json"  background="transparent"  speed="1" loop  autoplay></lottie-player> 
         -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script defer src="./script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <script src="/path/to/typeit/source"></script>
+  <script defer src="./script.js"></script>
 </body>
 
 </html>
