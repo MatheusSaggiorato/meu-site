@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }).go();
   });
 
-  new TypeIt('#typeit', {
-    strings: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.JS'],
+  new TypeIt('#typeIt', {
+    strings: ['Motivo 1', 'Motivo 2', 'Motivo 3', 'Motivo 4', 'etc...'],
     breakLines: false,
     loop: true,
     speed: 100,
@@ -82,3 +82,6 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
