@@ -85,3 +85,15 @@ function topFunction() {
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+let root = document.documentElement;
+let header = document.getElementById('header');
+let headerHeight = document.defaultView.getComputedStyle(header, null).getPropertyValue('height');
+
+function changeHeight() {
+    root.style.setProperty('--header-height', headerHeight)
+}
+
+setInterval(changeHeight, 2000);
+
