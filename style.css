@@ -55,16 +55,16 @@
     --ti-cursor-color: var(--light-theme);
     --ti-cursor-font-size: var(--font-size-typeit);
     --ti-cursor-transform: translateX(.1rem);
-    --dark-gradient:  linear-gradient(90deg, rgba(21,21,21,1) 0%, rgba(27,27,27,1) 9%, rgba(34,34,34,1) 29%, rgba(39,39,39,1) 51%, rgba(37,37,37,1) 75%, rgba(48,48,48,1) 89%, rgba(64,64,64,1) 100%);
-    --header-height: 300px;
+    --dark-gradient:linear-gradient(90deg, rgba(21,21,21,1) 0%, rgba(27,27,27,1) 9%, rgba(34,34,34,1) 29%, rgba(39,39,39,1) 40%, rgba(37,37,37,1) 48%, rgba(48,48,48,1) 68%, rgba(64,64,64,1) 100%);
 }
 
 body {
-    background-color: var(--light-theme);
-    position: absolute;
-    background-image: url(./assets/images/wallpaper8.png);
+    background-color: var(--dark-theme);
+    background-image: url(./assets/images/wallpaper7.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
@@ -72,6 +72,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.3rem 2rem;
+    top: 0;
     width: 100%;
     background-color: transparent;
     font-size: 0.75rem;
@@ -248,12 +249,15 @@ a {
     }
 }
 
+.contato-container,
+.main-container {
+    padding: 20px 40px;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
-    padding: 0px 40px;
-    width: 100%;
+    margin-top: 120px;
     border: 1px solid gray;
 }
 
@@ -340,8 +344,8 @@ a {
     border-radius: 50%;
     width: 45px;
     height: auto;
-    z-index: 1000;
     animation: blink 0.6s ease-in-out infinite alternate;
+    z-index: 2000;
 }
 
 @keyframes blink {
@@ -371,7 +375,7 @@ a {
     text-align: center;
     cursor: pointer;
     transition: 250ms;
-    z-index: 1000;
+    z-index: 2000;
 }
 
 #backToTop::after {
@@ -392,13 +396,11 @@ a {
 }
 
 .main-footer {
-    position: relative;
+    position:relative;
     background: var(--dark-gradient);
     color: var(--light-theme);
     padding: 20px;
     text-align: center;
-    z-index: 2000;
-    width: 100%;
 }
 
 .icon-social-midia {
