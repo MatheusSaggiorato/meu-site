@@ -28,8 +28,8 @@ itemsMenu.forEach(function (event) {
 
 
 
-//typeitjs.com
 
+//start typeitjs.com
 document.addEventListener("DOMContentLoaded", function () {
   new TypeIt("#element", {
     strings: ["This is my string!"],
@@ -37,19 +37,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 new TypeIt('#typeIt', {
-  strings: ['Motivo 1', 'Motivo 2', 'Motivo 3', 'Motivo 4', 'etc...'],
+  strings: ['Motivo 1', 'Motivo 2'],
   breakLines: false,
   loop: true,
   speed: 100,
   lifeLike: false,
-  nextStringDelay: [2000, 1000],
+  nextStringDelay: [3000, 3000],
+  loopDelay: [3000, 3000]
 }).go();
+//end typeitjs
 
 
-
-
-
-//back to top
 window.onscroll = function () {
 
   const mybutton = document.getElementById("backToTop");

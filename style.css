@@ -52,7 +52,6 @@ body::-webkit-scrollbar {
   
   body::-webkit-scrollbar-thumb {
     background-color: var(--first-blue);
-    border-radius: 20px;
   }
 
 :root {
@@ -74,7 +73,7 @@ body::-webkit-scrollbar {
 }
 
 body {
-    background-color: var(--light-theme);
+    background-color: var(--dark-gradient);
 
 }
 
@@ -96,6 +95,11 @@ header {
     border: none;
 }
 
+.fa-chevron-down {
+    transition: all .5s;
+    margin-left: 5px;
+    width: 10px;
+}
 
 #menu {
     display: flex;
@@ -131,19 +135,31 @@ a {
 }
 
 #menu li ul {
-    position: absolute;
     background-color: #1C1C1E;
     border-radius: 5px;
     color: var(--fourth-blue);
-    display: none;
+    visibility: hidden;
     padding: 0;
     margin: 0;
     border: 1px solid var(--light-theme);
+    position: absolute;
+	overflow:hidden;
+	max-height:0;
+	transition:all .5s;
+    width: 100%;
 }
 
 #menu li:hover ul,
 #menu li.hover ul {
-    display: block;
+    visibility: visible;
+	height:auto;
+	max-height:200px;
+	transition:all .5s;
+}
+
+#menu li:hover .fa-chevron-down {
+    transform: rotate(180deg);
+
 }
 
 #menu li ul li {
@@ -273,11 +289,11 @@ a {
     height: 101vh;
     background: rgb(21,21,21);
     background: var(--dark-gradient);
-/*      background-repeat: no-repeat;
+     background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
      background-attachment: fixed;
-    background-image: url(./assets/images/wallpaper8.png); */
+    background-image: url(./assets/images/wallpaper9.png);
 }
 
 .box-main-container {
@@ -457,6 +473,11 @@ a {
     margin-left: 10px;
 }
 
+.termos-footer:hover {
+    color: var(--light-theme);
+}
+
+
 .social-midias-container {
     display: flex;
     justify-content: center;
@@ -525,12 +546,6 @@ a {
         border-radius: 5px;
         color: var(--fourth-blue);
         border: 1px solid var(--light-theme);
-    }
-
-    body {
-        margin: auto;
-        overflow-x: hidden;
-        width: 100%;
     }
 
     #menu {
