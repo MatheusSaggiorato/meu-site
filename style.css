@@ -43,16 +43,18 @@
 }
 
 body::-webkit-scrollbar {
-    width: 10px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: var(--light-theme); /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
+    width: 10px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--light-theme);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: var(--first-blue);
-  }
+}
 
 :root {
     font-family: 'Roboto', sans-serif;
@@ -68,12 +70,13 @@ body::-webkit-scrollbar {
     --ti-cursor-color: var(--light-theme);
     --ti-cursor-font-size: var(--font-size-typeit);
     --ti-cursor-transform: translateX(.1rem);
-    --dark-gradient:linear-gradient(90deg, rgba(21,21,21,1) 0%, rgba(27,27,27,1) 9%, rgba(34,34,34,1) 29%, rgba(39,39,39,1) 40%, rgba(37,37,37,1) 48%, rgba(48,48,48,1) 68%, rgba(64,64,64,1) 100%);
-    --blue-gradient:linear-gradient(148deg, rgba(22,44,64,1) 0%, rgba(28,73,104,1) 0%, rgba(37,114,162,1) 83%, rgba(38,117,166,1) 100%);
+    --dark-gradient: linear-gradient(90deg, rgba(21, 21, 21, 1) 0%, rgba(27, 27, 27, 1) 9%, rgba(34, 34, 34, 1) 29%, rgba(39, 39, 39, 1) 40%, rgba(37, 37, 37, 1) 48%, rgba(48, 48, 48, 1) 68%, rgba(64, 64, 64, 1) 100%);
+    --blue-gradient: linear-gradient(148deg, rgba(22, 44, 64, 1) 0%, rgba(28, 73, 104, 1) 0%, rgba(37, 114, 162, 1) 83%, rgba(38, 117, 166, 1) 100%);
 }
 
 body {
-    background-color: var(--dark-gradient);
+    background: #212121;
+    background: var(--dark-gradient);
 
 }
 
@@ -135,30 +138,28 @@ a {
 }
 
 #menu li ul {
-    background-color: #1C1C1E;
+    background: #212121;
+    background: var(--dark-gradient);
     border-radius: 5px;
-    color: var(--fourth-blue);
-    visibility: hidden;
     padding: 0;
     margin: 0;
-    border: 1px solid var(--light-theme);
     position: absolute;
-	overflow:hidden;
-	max-height:0;
-	transition:all .5s;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s;
     width: 100%;
+    align-items: flex-end;
 }
 
 #menu li:hover ul,
 #menu li.hover ul {
-    visibility: visible;
-	height:auto;
-	max-height:200px;
-	transition:all .5s;
+    height: auto;
+    max-height: 200px;
+    transition: all .5s;
 }
 
 #menu li:hover .fa-chevron-down {
-    transform: rotate(180deg);
+    transform: rotateX(180deg);
 
 }
 
@@ -287,12 +288,12 @@ a {
     justify-content: space-between;
     padding-top: 75px;
     height: 101vh;
-    background: rgb(21,21,21);
+    background: rgb(21, 21, 21);
     background: var(--dark-gradient);
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
-     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     background-image: url(./assets/images/wallpaper9.png);
 }
 
@@ -439,8 +440,8 @@ a {
 }
 
 .main-footer {
-    position:relative;
-    background: rgb(21,21,21);
+    position: relative;
+    background: rgb(21, 21, 21);
     background: var(--dark-gradient);
     color: var(--light-theme);
     padding: 20px;
@@ -540,31 +541,39 @@ a {
 
 @media screen and (max-width: 980px) {
 
-    #menu li ul {
-        position: relative;
-        background-color: #1C1C1E;
-        border-radius: 5px;
-        color: var(--fourth-blue);
-        border: 1px solid var(--light-theme);
-    }
-
     #menu {
-        display: flex;
         position: absolute;
         width: auto;
         top: 4rem;
-        background: #1C1C1E;
-        transition: 0.5s;
+        transition: all 0.5s;
         z-index: 1000;
         visibility: hidden;
         overflow-y: hidden;
-        flex-direction: column;
-        align-items: flex-end;
         right: 0;
         border-radius: 5px;
         padding: 10px;
+        gap: 15px;
     }
 
+    #menu li ul {
+        position: relative;
+        background: #162C40;
+    }
+
+/*     #menu li a {
+        text-align: end;
+    }
+
+    #menu li ul li {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+    }
+
+    #menu li ul li a {
+        margin-right: 15px;
+    }
+ */
     .btn-header {
         display: none;
     }
@@ -574,10 +583,10 @@ a {
         visibility: visible;
         overflow-y: auto;
         z-index: 1000;
-    }
-
-    #menu a {
-        margin: 0 1rem;
+        background: var(--dark-gradient);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     #btn-mobile {
