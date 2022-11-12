@@ -44,12 +44,10 @@
 
 body::-webkit-scrollbar {
     width: 10px;
-    /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
     background: var(--light-theme);
-    /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
@@ -171,110 +169,17 @@ a {
 }
 
 .btn-whats-main {
-    position: relative;
-    padding: 5px 20px;
-    margin-left: 1rem;
-    outline: none;
-    border: 2px solid var(--cta-color);
-    border-radius: 5px;
-    font-size: 0.875rem;
-    font-weight: 900;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.45s;
-    transition-delay: 0s;
-    background-color: var(--dark-theme);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--cta-color);
+    border: none;
     color: var(--light-theme);
-    animation: 3s linear background-changed infinite;
+    letter-spacing: 2px;
+    font-weight: 900;
 }
 
 .btn-whats-main:hover {
-    transition-delay: 1.0s;
-    box-shadow: 0 0 10px var(--cta-color),
-        0 0 20px var(--cta-color),
-        0 0 40px var(--cta-color),
-        0 0 80px var(--cta-color),
-        0 0 100px var(--cta-color);
-    animation: none;
-}
-
-.btn-whats-main span {
-    position: relative;
-    z-index: 100;
-}
-
-.btn-whats-main::before {
-    content: "";
-    position: absolute;
-    left: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 15px;
-    height: 2px;
-    background: var(--cta-color);
-    box-shadow: 5px -8px 0 var(--cta-color),
-        5px 8px 0 var(--cta-color);
-    transition: width 0.5s,
-        left 0.5s,
-        height 0.5s,
-        box-shadow 0.5s;
-    transition-delay: 1s, 0.5s, 0s, 0s;
-}
-
-.btn-whats-main:hover::before {
-    width: 60%;
-    height: 110%;
-    left: -2px;
-    box-shadow: 5px 0 0 var(--cta-color),
-        5px 0 0 var(--cta-color);
-    transition-delay: 0s, 0.5s, 1s, 1s;
-    border-radius: 5px;
-}
-
-.btn-whats-main::after {
-    content: "";
-    position: absolute;
-    right: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 15px;
-    height: 2px;
-    background: var(--cta-color);
-    box-shadow: -5px -8px 0 var(--cta-color),
-        -5px 8px 0 var(--cta-color);
-    transition: width 0.5s, right 0.5s, height 0.5s, box-shadow 0.5s;
-    transition-delay: 1s, 0.5s, 0s, 0s;
-}
-
-.btn-whats-main:hover::after {
-    width: 60%;
-    height: 110%;
-    right: -2px;
-    box-shadow: -5px 0 0 var(--cta-color), -5px 0 0 var(--cta-color);
-    transition-delay: 0s, 0.5s, 1s, 1s;
-    border-radius: 5px;
-}
-
-@keyframes background-changed {
-    0% {
-        background-color: var(--dark-theme)
-    }
-
-    25% {
-        background-color: var(--first-blue);
-    }
-
-    50% {
-        background-color: var(--second-blue);
-    }
-
-    75% {
-        background-color: var(--third-blue);
-    }
-
-    100% {
-        background-color: var(--dark-theme);
-    }
+    background-color: var(--second-blue);
 }
 
 .contato-container,
@@ -284,9 +189,9 @@ a {
 
 .main-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    padding-top: 75px;
+    padding: 75px 40px;
     height: 101vh;
     background: rgb(21, 21, 21);
     background: var(--dark-gradient);
@@ -297,38 +202,21 @@ a {
     background-image: url(./assets/images/wallpaper9.png);
 }
 
-.box-main-container {
-    border: 1px solid red;
-}
-
-.box-one {
-    width: 45%;
-}
-
-.box-two {
-    width: 50%;
-}
-
-
-.title-main-container,
-.subtitle,
+.title-main,
 .typeItTitle,
-#tipeIt,
-#typeit::before {
+.typeit {
     color: var(--light-theme);
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-#typeit,
-.typeItTitle {
-    margin-top: 50px;
-    font-size: var(--font-size-typeit);
+.title-main {
+    margin-top: 100px;
 }
 
-.subtitle {
-    margin-top: 20px;
-    font-size: 16px;
+#typeit,
+.typeItTitle {
+    font-size: var(--font-size-typeit);
 }
 
 .btn-whats-main {
@@ -449,6 +337,7 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    box-shadow: 0px -2px 9px rgba(90, 90, 90, 0.86);
 }
 
 .icon-social-midia {
