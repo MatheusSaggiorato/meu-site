@@ -25,10 +25,6 @@ itemsMenu.forEach(function (event) {
 })
 
 
-
-
-
-
 //start typeitjs.com
 document.addEventListener("DOMContentLoaded", function () {
   new TypeIt("#element", {
@@ -63,7 +59,6 @@ window.onscroll = function () {
   //change background header
   if (document.documentElement.scrollTop !== 0) {
     header.style.background = "var(--dark-theme)";
-    header.style.background = "var(--dark-gradient)";
   } else {
     header.style.background = "transparent";
   }
