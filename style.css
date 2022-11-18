@@ -54,9 +54,13 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--first-blue);
 }
 
-:root {
+html {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+:root {
     --first-blue: #162C40;
     --second-blue: #2675A6;
     --third-blue: #498BA6;
@@ -74,6 +78,7 @@ body::-webkit-scrollbar-thumb {
 
 body {
     background: var(--light-theme);
+    overflow-x: hidden;
 
 }
 
@@ -96,7 +101,7 @@ header {
 }
 
 .fa-chevron-down {
-    transition: all .7s;
+    transition: transform .7s;
     margin-left: 5px;
     width: 10px;
 }
@@ -110,10 +115,6 @@ header {
     letter-spacing: 2px;
 }
 
-#menu, a {
-    margin: 0;
-    padding: 0;
-}
 
 #menu li {
     position: relative;
@@ -137,21 +138,19 @@ header {
     background: #212121;
     background: var(--dark-gradient);
     border-radius: 5px;
-    padding: 0;
-    margin: 0;
     position: absolute;
     overflow: hidden;
     max-height: 0;
-    transition: all .5s;
     width: 100%;
     align-items: flex-end;
+    transition: max-height .7s;
 }
 
 #menu li:hover ul,
 #menu li.hover ul {
     height: auto;
     max-height: 200px;
-    transition: all .5s;
+    transition: max-height .7s;
 }
 
 #menu li:hover .fa-chevron-down {
@@ -181,12 +180,9 @@ header {
 }
 
 .main-container {
-    height: 101vh;
-    background: rgb(21, 21, 21);
+    height: 100vh;
     background: var(--dark-gradient);
-    background-image: url(./assets/images/wallpaper6.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: rgb(21, 21, 21) url(./assets/images/wallpaper6.png) no-repeat center center;
     background-size: cover;
 }
 
@@ -423,19 +419,21 @@ header {
         position: absolute;
         width: auto;
         top: 4rem;
-        transition: all 0.5s;
         z-index: 1000;
-        visibility: hidden;
-        overflow-y: hidden;
         right: 0;
         border-radius: 5px;
         padding: 10px;
         gap: 15px;
+        position: absolute;
+        overflow: hidden;
+        max-height: 0;
+        visibility: hidden;
     }
 
     #menu li ul {
         position: relative;
-        background: var(--dark-gradient)
+        background: var(--dark-gradient);
+        transition: max-height .7s;
     }
 
     .btn-header {
@@ -451,6 +449,8 @@ header {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        max-height: 100vh;
+        transition: max-height .5s;
     }
 
     #btn-mobile {
