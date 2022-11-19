@@ -1,3 +1,7 @@
+@import url("../styles/variables.css");
+@import url("../styles/reset.css");
+@import url("../styles/menu.css");
+
 @font-face {
     font-family: Roboto;
     src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Thin.woff);
@@ -52,119 +56,9 @@ html {
     scroll-padding-top: 85px;
 }
 
-:root {
-    --first-blue: #162C40;
-    --second-blue: #2675A6;
-    --third-blue: #498BA6;
-    --fourth-blue: #B4D2D9;
-    --dark-theme: #0D0D0D;
-    --light-theme: #FAFBFD;
-    --font-size-typeit: 34px;
-    --cta-color: rgb(183, 27, 0);
-    --ti-cursor-color: var(--light-theme);
-    --ti-cursor-font-size: var(--font-size-typeit);
-    --ti-cursor-transform: translateX(.1rem);
-    --dark-gradient: linear-gradient(90deg, rgba(21, 21, 21, 1) 0%, rgba(27, 27, 27, 1) 9%, rgba(34, 34, 34, 1) 29%, rgba(39, 39, 39, 1) 40%, rgba(37, 37, 37, 1) 48%, rgba(48, 48, 48, 1) 68%, rgba(64, 64, 64, 1) 100%);
-    --blue-gradient: linear-gradient(148deg, rgba(22, 44, 64, 1) 0%, rgba(28, 73, 104, 1) 0%, rgba(37, 114, 162, 1) 83%, rgba(38, 117, 166, 1) 100%);
-}
-
 body {
     background: var(--light-theme);
     overflow-x: hidden;
-
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.3rem 2rem;
-    top: 0;
-    width: 100%;
-    font-size: 0.75rem;
-    position: fixed;
-    z-index: 2000;
-}
-
-
-#btn-mobile {
-    display: none;
-    border: none;
-}
-
-.fa-chevron-down {
-    transition: transform .7s;
-    margin-left: 5px;
-    width: 10px;
-}
-
-#menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-size: 0.875rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-
-#menu li {
-    position: relative;
-}
-
-#menu li a {
-    text-decoration: none;
-    padding: 5px 10px;
-    display: block;
-    color: var(--light-theme);
-}
-
-#menu li a:focus,
-#menu li a:hover {
-    color: var(--light-theme);
-    background-color: var(--second-blue);
-    border-radius: 4px;
-}
-
-#menu li ul {
-    background: #212121;
-    background: var(--dark-gradient);
-    border-radius: 5px;
-    position: absolute;
-    overflow: hidden;
-    max-height: 0;
-    width: 100%;
-    align-items: flex-end;
-    transition: max-height .7s;
-}
-
-#menu li:hover ul,
-#menu li.hover ul {
-    height: auto;
-    max-height: 200px;
-    transition: max-height .7s;
-}
-
-#menu li:hover .fa-chevron-down {
-    transform: rotateX(180deg);
-
-}
-
-#menu li ul li {
-    display: block;
-    width: 10rem;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-.btn-whats-main {
-    padding: 10px;
-    border-radius: 20px;
-    background-color: var(--cta-color);
-    border: none;
-    color: var(--light-theme);
-    letter-spacing: 2px;
-    font-weight: 900;
 }
 
 .btn-whats-main:hover {
@@ -178,10 +72,10 @@ header {
     background-size: cover;
 }
 
-.box-main-container {
+.content-main-container {
     border: 1px solid gray;
     padding: 70px 25px;
-    width: 65%;
+    width: 50%;
     height: 100vh;
 
 }
@@ -401,88 +295,4 @@ header {
 .sm-box:hover .tooltip::before {
     background: var(--second-blue);
     color: var(--light-theme);
-}
-
-
-
-@media screen and (max-width: 980px) {
-
-    #menu {
-        position: absolute;
-        width: auto;
-        top: 4rem;
-        z-index: 1000;
-        right: 0;
-        border-radius: 5px;
-        padding: 10px;
-        gap: 15px;
-        position: absolute;
-        overflow: hidden;
-        max-height: 0;
-        visibility: hidden;
-    }
-
-    #menu li ul {
-        position: relative;
-        background: var(--dark-gradient);
-        transition: max-height .7s;
-    }
-
-    .btn-header {
-        display: none;
-    }
-
-    #nav.active #menu {
-        height: 100vh;
-        border-radius: 5px;
-        visibility: visible;
-        overflow-y: auto;
-        z-index: 1000;
-        background: var(--dark-theme);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        max-height: 100vh;
-        transition: max-height .5s;
-    }
-
-    #btn-mobile {
-        display: flex;
-        font-size: 22px;
-        border-radius: 5px;
-        padding: 8px;
-        background: transparent;
-        gap: 0.5rem;
-        color: var(--light-theme);
-    }
-
-    #hamburger {
-        border-top: 2px solid;
-        width: 25px;
-    }
-
-    #hamburger::after,
-    #hamburger::before {
-        content: '';
-        display: block;
-        width: 25px;
-        height: 2px;
-        background: currentColor;
-        margin-top: 8px;
-        transition: 0.5s;
-        position: relative;
-    }
-
-    #nav.active #hamburger {
-        border-top-color: transparent;
-    }
-
-    #nav.active #hamburger::before {
-        transform: rotate(135deg);
-    }
-
-    #nav.active #hamburger::after {
-        transform: rotate(-135deg);
-        top: -10px;
-    }
 }
