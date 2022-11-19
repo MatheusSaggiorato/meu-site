@@ -34,14 +34,6 @@
     font-weight: 900;
 }
 
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body::-webkit-scrollbar {
     width: 10px;
 }
@@ -182,7 +174,7 @@ header {
 .main-container {
     height: 100vh;
     background: var(--dark-gradient);
-    background: rgb(21, 21, 21) url(./assets/images/wallpaper6.png) no-repeat center center;
+    background: rgb(21, 21, 21) url(../images/wallpaper1.png) no-repeat center center;
     background-size: cover;
 }
 
