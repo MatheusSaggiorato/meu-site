@@ -68,12 +68,11 @@ body {
 .main-container {
     height: 100vh;
     background: var(--dark-gradient);
-    background: rgb(21, 21, 21) url(../images/wallpaper1.png) no-repeat center center;
+    background: rgb(21, 21, 21) url(../images/wallpaper1.png) no-repeat center center fixed;
     background-size: cover;
 }
 
 .content-main-container {
-    border: 1px solid gray;
     padding: 70px 25px;
     width: 50%;
     height: 100vh;
@@ -95,8 +94,16 @@ body {
 }
 
 .btn-whats-main {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--cta-color);
+    border: none;
+    color: var(--light-theme);
+    letter-spacing: 2px;
+    font-weight: 900;
     margin-top: 50px;
 }
+
 
 .formContainer {
     width: 40%;
@@ -235,7 +242,8 @@ body {
     text-align: center;
 }
 
-.social-midias-container, .copy-logo-container {
+.social-midias-container,
+.copy-logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
