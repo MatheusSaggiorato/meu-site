@@ -69,28 +69,3 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-
-
-/* const btnDropdown = document.getElementById("btn-dropdown");
-const subMenu = document.getElementById("sub-menu");
-const chevron = document.querySelector('.fa-chevron-down');
-
-
-function toggleSubMenu(event) {
-
-  if (event.type === "click") event.preventDefault();
-  subMenu.classList.toggle("active");
-
-  if (subMenu.classList.contains('active')) {
-
-    subMenu.style.height = "auto";
-    subMenu.style.maxHeight = "200px";
-
-  } else {
-    subMenu.style.maxHeight = "0";
-  }
-}
-
-btnDropdown.addEventListener("click", toggleSubMenu);
- */

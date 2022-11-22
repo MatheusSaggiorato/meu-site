@@ -15,8 +15,9 @@ header {
 	border: none;
 }
 
-.fa-chevron-down {
-	transition: transform .7s;
+.fa-chevron-down,
+.fa-minus,
+.fa-plus {
 	margin-left: 5px;
 	width: 10px;
 }
@@ -58,19 +59,22 @@ header {
 	max-height: 0;
 	width: 100%;
 	align-items: flex-end;
-	transition: max-height .7s;
+	transition: max-height .5s;
 }
 
 #menu li:hover ul,
 #menu li.hover ul {
 	height: auto;
 	max-height: 200px;
-	transition: max-height .7s;
+	transition: max-height .5s;
 }
 
-#menu li:hover .fa-chevron-down {
-	transform: rotate(180deg);
+.fa-minus, #menu li:hover .fa-plus {
+	display: none;
+}
 
+#menu li:hover .fa-minus {
+	display: inline-block;
 }
 
 #menu li ul li {
@@ -111,7 +115,7 @@ header {
 	#menu li ul {
 		position: relative;
 		background: var(--dark-gradient);
-		transition: max-height .7s;
+		transition: max-height .5s;
 	}
 
 	#nav.active #menu {
