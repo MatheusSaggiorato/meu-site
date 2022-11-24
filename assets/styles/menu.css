@@ -50,16 +50,15 @@ header {
 	border-radius: 4px;
 }
 
-#menu li ul {
+#sub-menu {
 	background: #212121;
 	background: var(--dark-gradient);
 	border-radius: 5px;
-	position: absolute;
+	position:absolute;
 	overflow: hidden;
 	max-height: 0;
-	width: 100%;
-	align-items: flex-end;
 	transition: max-height .5s;
+	white-space: nowrap;
 }
 
 #menu li:hover ul,
@@ -79,7 +78,6 @@ header {
 
 #menu li ul li {
 	display: block;
-	width: 10rem;
 	margin: 5px;
 	border-radius: 5px;
 }
@@ -110,6 +108,7 @@ header {
 		overflow: hidden;
 		max-height: 0;
 		visibility: hidden;
+		text-align: end;
 	}
 
 	#menu li ul {

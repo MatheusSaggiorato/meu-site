@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./assets/images/logoSemNomeFundoAzul.webp">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./assets//styles/style.css?v=0.1">
   <title>Matheus Saggiorato</title>
   <script src="https://kit.fontawesome.com/d2e94242a3.js" crossorigin="anonymous"></script>
@@ -25,11 +27,11 @@
 
       <ul id="menu" role="menu">
         <li><a class="linksMenu" href="#">SOBRE</a></li>
-        <li><a id="btn-dropdown" href="#">NOSSOS SERVIÇOS<i class="fa-solid fa-minus"></i><i class="fa-solid fa-plus"></i></a>
-          <ul id="sub-menu" role="sub-menu">
-            <li><a class="linksMenu" href="#">WEB DESIGN</a></li>
-            <li><a class="linksMenu" href="#">CRIAÇÃO DE LANDING PAGES</a></li>
+        <li><a id="btn-dropdown" href="#">SERVIÇOS<i class="fa-solid fa-minus"></i><i class="fa-solid fa-plus"></i></a>
+          <ul id="sub-menu">
             <li><a class="linksMenu" href="#">MANUTENÇÃO DE SITES</a></li>
+            <li><a class="linksMenu" href="#">LANDING PAGES</a></li>
+            <li><a class="linksMenu" href="#">WEB DESIGN</a></li>
           </ul>
         </li>
         <li><a class="linksMenu" href="#">PORTFÓLIO</a></li>
@@ -55,7 +57,14 @@
 
   </section>
 
-  <section class="contato-container">
+  <section id="sobre">
+
+    <h1>Olá, meu nome é Matheus Saggiorato da Silva</h1>
+    <p>Tenho 22 anos e sou de Passo Fundo - RS. Blá blá blá blá</p>
+
+  </section>
+
+  <section id="contato">
 
     <h1>Deixe sua mensagem que entraremos em contato</h1>
     <div class="formContainer">
@@ -123,9 +132,12 @@
       <img class="whatsapp-fixed" src="./assets/images/whatsappgrande.webp" alt="whatsapp logo">
     </a>
 
-    <button onclick="topFunction()" id="backToTop" title="Go to top"></button>
+    <button onclick="topFunction()" id="backToTop"><i class="fa-solid fa-angles-up"></i></button>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
   <script defer src="./assets/scripts/script.js"></script>
 </body>
