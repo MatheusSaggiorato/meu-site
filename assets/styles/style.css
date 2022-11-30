@@ -64,7 +64,7 @@ body {
 .main-container {
     height: 100vh;
     background: var(--dark-gradient);
-    background: rgb(21, 21, 21) url(../images/wallpaper1.png) no-repeat center center fixed;
+    background: rgb(21, 21, 21) url(../images/bg-tech-canva.png) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -106,6 +106,19 @@ body {
 #sobre, #contato {    
     color: var(--light-theme);
     padding: 30px;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--dark-theme);
+}
+
+
+.my-image {
+width: 250px;
+border-radius: 50%;
 }
 
 .formContainer {
@@ -209,7 +222,7 @@ body {
 
 .main-footer {
     position: relative;
-    background: var(--dark-theme);
+    background: var(--dark-blue);
     color: var(--light-theme);
     padding: 20px;
     display: flex;
@@ -225,18 +238,18 @@ body {
 
 .icon-social-midia {
     font-size: 30px;
-    color: var(--second-blue);
+    color: var(--light-theme);
     border-radius: 50%;
 }
 
 .termos-footer {
-    color: var(--second-blue);
+    color: var(--light-theme);
     margin-left: 10px;
     white-space: nowrap;
 }
 
 .termos-footer:hover {
-    color: var(--light-theme);
+    color: var(--second-blue);
 }
 
 .copy-footer {
@@ -253,7 +266,7 @@ body {
 }
 
 .sm-box:hover .icon-social-midia {
-    color: var(--light-theme);
+    color: var(--second-blue);
 }
 
 .sm-box {

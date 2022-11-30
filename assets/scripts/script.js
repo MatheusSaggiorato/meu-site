@@ -46,26 +46,22 @@ new TypeIt('#typeIt', {
 
 window.onscroll = function () {
 
-  const mybutton = document.getElementById("backToTop");
+  const btnBackToTop = document.getElementById("backToTop");
   const header = document.getElementById("header");
 
   //btn back to top
-  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-    mybutton.style.display = "block";
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 350) {
+    btnBackToTop.style.display = "block";
+    header.style.background = "var(--dark-blue";
   } else {
-    mybutton.style.display = "none";
+    btnBackToTop.style.display = "none";
+    header.style.background = "rgba(0, 6, 30, .9)";
   }
 
-  //change background header
-  if (document.documentElement.scrollTop !== 0) {
-    header.style.background = "var(--dark-theme)";
-  } else {
-    header.style.background = "transparent";
-  }
 }
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+function BackToTopFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

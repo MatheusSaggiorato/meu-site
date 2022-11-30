@@ -8,6 +8,7 @@ header {
 	font-size: 0.75rem;
 	position: fixed;
 	z-index: 2000;
+	background: rgba(0, 6, 30, .9);
 }
 
 #btn-mobile {
@@ -15,22 +16,14 @@ header {
 	border: none;
 }
 
-.fa-chevron-down,
-.fa-minus,
-.fa-plus {
-	margin-left: 5px;
-	width: 10px;
-}
-
 #menu {
 	display: flex;
 	align-items: center;
 	list-style: none;
-	font-size: 0.875rem;
+	font-size: .95rem;
 	font-weight: 700;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 }
-
 
 #menu li {
 	position: relative;
@@ -38,7 +31,7 @@ header {
 
 #menu li a {
 	text-decoration: none;
-	padding: 5px 10px;
+	padding: 10px;
 	display: block;
 	color: var(--light-theme);
 }
@@ -47,53 +40,62 @@ header {
 #menu li a:hover {
 	color: var(--light-theme);
 	background-color: var(--second-blue);
-	border-radius: 4px;
+	border-radius: 5px;
+}
+
+#menu li ul li {
+	border: 1px solid var(--light-theme);
+}
+
+#menu li ul li a:hover {
+	border-radius: 0;
 }
 
 #sub-menu {
-	background: #212121;
-	background: var(--dark-gradient);
+	background: var(--dark-blue);
 	border-radius: 5px;
 	position:absolute;
 	overflow: hidden;
 	max-height: 0;
 	transition: max-height .5s;
-	white-space: nowrap;
+	/* white-space: nowrap;*/
 }
 
-#menu li:hover ul,
-#menu li.hover ul {
+#menu li:hover #sub-menu,
+#menu li.hover #sub-menu {
 	height: auto;
-	max-height: 200px;
+	max-height: 260px;
 	transition: max-height .5s;
+	border: 1px solid var(--light-theme);
 }
 
-.fa-minus, #menu li:hover .fa-plus {
-	display: none;
+.plus {
+    margin-left: 5px;
+	float: right;
 }
 
-#menu li:hover .fa-minus {
-	display: inline-block;
+.plus::after,
+.plus::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 6px;
+    transition: .5s;
+    position: relative;
 }
 
-#menu li ul li {
-	display: block;
-	margin: 5px;
-	border-radius: 5px;
+.plus::after {
+    transform: rotate(90deg);
+    top: -8px;
 }
 
-.btn-whats-main {
-	padding: 10px;
-	border-radius: 20px;
-	background-color: var(--cta-color);
-	border: none;
-	color: var(--light-theme);
-	letter-spacing: 2px;
-	font-weight: 900;
+#menu li:hover .plus::after {
+    transform: rotate(180deg);
 }
 
-
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 770px) {
 
 	#menu {
 		position: absolute;
@@ -113,8 +115,16 @@ header {
 
 	#menu li ul {
 		position: relative;
-		background: var(--dark-gradient);
 		transition: max-height .5s;
+		text-align: start;
+	}
+
+	#menu li a:not(#menu li ul li a) {
+		text-align: center;
+	}
+
+	.plus {
+		position: absolute;
 	}
 
 	#nav.active #menu {
@@ -123,11 +133,12 @@ header {
 		visibility: visible;
 		overflow-y: auto;
 		z-index: 1000;
-		background: var(--dark-theme);
+		background: var(--dark-blue);
 		display: flex;
 		flex-direction: column;
-		align-items: flex-end;
+		align-items: center;
 		max-height: 100vh;
+		max-width: 80%;
 		transition: max-height .5s;
 	}
 
