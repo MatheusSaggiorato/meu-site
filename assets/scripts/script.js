@@ -1,5 +1,5 @@
 const btnMobile = document.getElementById("btn-mobile");
-const itemsMenu = document.querySelectorAll(".linksMenu");
+const itemsMenu = document.querySelectorAll(".links-menu");
 const nav = document.getElementById("nav");
 const active = nav.classList.contains("active");
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }).go();
 });
 
-new TypeIt('#typeIt', {
+new TypeIt('#type-it', {
   strings: ['Motivo 1', 'Motivo 2'],
   breakLines: false,
   loop: true,
@@ -51,11 +51,13 @@ window.onscroll = function () {
 
   //btn back to top
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 350) {
-    btnBackToTop.style.display = "block";
-    header.style.background = "var(--dark-blue";
+    btnBackToTop.classList.add('back-to-top-active')
+    btnBackToTop.classList.remove('back-to-top-inactive');
+    header.classList.add('header-on-scroll');
   } else {
-    btnBackToTop.style.display = "none";
-    header.style.background = "rgba(0, 6, 30, .9)";
+    btnBackToTop.classList.add('back-to-top-inactive')
+    btnBackToTop.classList.remove('back-to-top-active');
+    header.classList.remove('header-on-scroll');
   }
 
 }

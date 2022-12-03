@@ -59,13 +59,13 @@ html {
 body {
     background: var(--dark-gradient);
     overflow-x: hidden;
+    color: var(--light-theme);
 }
 
 .main-container {
     height: 100vh;
     background: var(--dark-gradient);
-    background: rgb(21, 21, 21) url(../images/bg-tech-canva.png) no-repeat center center fixed;
-    background-size: cover;
+    background: rgb(21, 21, 21) url(../images/bg-tech-canva.png) center center/cover no-repeat fixed;
 }
 
 .content-main-container {
@@ -74,17 +74,7 @@ body {
     height: 100vh;
 }
 
-.title-main,
-.typeItTitle,
-.typeit {
-    color: var(--light-theme);
-}
-
-.title-main {
-    margin: 100px 0px;
-}
-
-.typeit {
+.typeit, .subtitle-main, .typeItTitle {
     margin-top: 30px;
 }
 
@@ -190,7 +180,6 @@ border-radius: 50%;
 
 #backToTop {
     position: fixed;
-    display: none;
     bottom: 15px;
     right: 15px;
     width: 30px;
@@ -203,6 +192,14 @@ border-radius: 50%;
     cursor: pointer;
     transition: 250ms;
     z-index: 3000;
+}
+
+.back-to-top-inactive {
+    display: none;
+}
+
+.back-to-top-active {
+    display: block;
 }
 
 #backToTop .fa-angles-up {

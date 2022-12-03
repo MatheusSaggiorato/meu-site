@@ -11,6 +11,10 @@ header {
 	background: rgba(0, 6, 30, .9);
 }
 
+.header-on-scroll {
+background: var(--dark-blue);
+}
+
 #btn-mobile {
 	display: none;
 	border: none;
@@ -82,7 +86,7 @@ header {
     height: 2px;
     background: currentColor;
     margin-top: 6px;
-    transition: .5s;
+    transition: transform .5s;
     position: relative;
 }
 
