@@ -53,7 +53,7 @@ body::-webkit-scrollbar-thumb {
 html {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-    scroll-padding-top: 85px;
+    scroll-padding-top: 75px;
 }
 
 body {
@@ -62,23 +62,34 @@ body {
     color: var(--light-theme);
 }
 
-.main-container {
+.top-container {
     height: 100vh;
     background: var(--dark-gradient);
     background: rgb(21, 21, 21) url(../images/bg-tech-canva.png) center center/cover no-repeat fixed;
 }
 
-.content-main-container {
-    padding: 70px 30px;
-    width: 50%;
+.content-top-container {
+    padding: 4.375rem 1.875rem;
     height: 100vh;
+    width: 65%;
 }
 
-.typeit, .subtitle-main, .typeItTitle {
-    margin-top: 30px;
+.title-top {
+    font-size: var(--font-desktop-title);
+    margin-top: var(--margin-desktop-vertical-session);
+    font-weight: 700;
 }
 
-.btn-whats-main {
+.subtitle-top, .type-it-title, .type-it {
+    font-size: var(--font-desktop-subtitle);
+}
+
+.subtitle-top, .btn-whats-top, .type-it-title {
+    margin-top: var(--margin-desktop-elements-session);
+}
+
+
+.btn-whats-top {
     padding: 10px;
     border-radius: 20px;
     background-color: var(--cta-color);
@@ -89,7 +100,7 @@ body {
     margin-top: 50px;
 }
 
-.btn-whats-main:hover {
+.btn-whats-top:hover {
     background-color: var(--second-blue);
 }
 
