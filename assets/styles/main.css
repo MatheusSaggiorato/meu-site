@@ -1,0 +1,194 @@
+@import url("../styles/variables.css");
+@import url("../styles/reset.css");
+@import url("../styles/menu.css");
+@import url("../styles/top.css");
+@import url("../styles/footer.css");
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Thin.woff);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Light.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Regular.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Medium.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Bold.woff);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Black.woff);
+    font-weight: 900;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--light-theme);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--first-blue);
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    background: var(--dark-gradient);
+    overflow-x: hidden;
+    color: var(--light-theme);
+}
+
+
+#sobre,
+#contato {
+    color: var(--light-theme);
+    padding: 30px;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--dark-theme);
+}
+
+
+.my-image {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.formContainer {
+    width: 40%;
+    margin-top: 20px;
+
+}
+
+.form-control {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-button:focus {
+    -ms-transform: scale(0.9);
+    /* IE 9 */
+    -webkit-transform: scale(0.9);
+    /* Safari 3-8 */
+    transform: scale(0.9);
+    box-shadow: 0px 0px 30px rgb(94, 94, 94);
+    -moz-box-shadow: 0px 0px 30px rgb(94, 94, 94);
+    -webkit-box-shadow: 0px 0px 30px rgb(94, 94, 94);
+}
+
+.whatsapp-fixed {
+    position: fixed;
+    display: flex;
+    bottom: 55px;
+    height: 70px;
+    right: 15px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 250ms;
+    border-radius: 50%;
+    width: 45px;
+    height: auto;
+    z-index: 2000;
+}
+
+.whatsapp-fixed:hover {
+    animation: blink 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 30px #29A71A;
+        -moz-box-shadow: 0px 0px 30px #29A71A;
+        -webkit-box-shadow: 0px 0px 30px #29A71A;
+    }
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 15px;
+    right: 22px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--first-blue);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 250ms;
+    z-index: 3000;
+}
+
+.back-to-top-inactive {
+    display: none;
+}
+
+.back-to-top-active {
+    display: block;
+}
+
+#backToTop .fa-angles-up {
+    position: relative;
+    font-size: 13px;
+    color: var(--light-theme);
+    transition: margin-bottom 250ms;
+}
+
+#backToTop:hover .fa-angles-up {
+    margin-bottom: 10px;
+}
+
+#backToTop:hover {
+    background-color: var(--third-blue);
+}

@@ -36,11 +36,11 @@ new TypeIt('#type-it', {
 /*   strings: ['80% da população pesquisa produtos e serviços na Internet', 'Sua empresa se torna mais acessível aos clientes em potencial',
    'estabelece confiança e credibilidade com os clientes', 'pdoe se tornar uma poderosa ferramenta de marketing', 'ajuda a economizar tempo e recursos',
   'fornece informações importantes aos clientes'], */
-  strings: ["Responsivo a todos os tamanhos de tela.", 'Extremamente veloz para carregar.', 'Com layout exclusivo.', 'Com as ferramentas necessárias já integradas.',
-'Focado em aumentar suas vendas e resultados.'],
+  strings: ["Responsivo a todos os tamanhos de tela;", 'Otimizado para carregar rapidamente;', 'Com layout exclusivo;', 'Já integrado com as ferramentas necessárias;',
+  'Focado em aumentar suas vendas e resultados;'],
   breakLines: false,
   loop: true,
-  speed: 40,
+  speed: 30,
   lifeLike: false,
   nextStringDelay: [3000, 3000],
   loopDelay: [3000, 3000]
@@ -54,14 +54,14 @@ window.onscroll = function () {
   const header = document.getElementById("header");
 
   //btn back to top
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 350) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     btnBackToTop.classList.add('back-to-top-active')
     btnBackToTop.classList.remove('back-to-top-inactive');
-    header.classList.add('header-on-scroll');
+    /* header.classList.add('header-on-scroll'); */
   } else {
     btnBackToTop.classList.add('back-to-top-inactive')
     btnBackToTop.classList.remove('back-to-top-active');
-    header.classList.remove('header-on-scroll');
+    /* header.classList.remove('header-on-scroll'); */
   }
 
 }

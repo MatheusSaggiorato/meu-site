@@ -5,15 +5,20 @@ header {
 	padding: 0.3rem 2rem;
 	top: 0;
 	width: 100%;
-	font-size: 0.75rem;
+	font-size: 0.875rem;
 	position: fixed;
 	z-index: 2000;
-	background: rgba(0, 6, 30, .9);
+	background: rgb(21, 21, 21) url(../images/bg-universe.png) center right/cover no-repeat fixed;
 }
 
-.header-on-scroll {
-background: var(--dark-blue);
+.logo {
+	height: 40px;
 }
+
+/* .header-on-scroll {
+background: var(--test-blue);
+background: rgb(21, 21, 21) url(../images/bg-tech2.png) center right/cover no-repeat fixed;
+} */
 
 #btn-mobile {
 	display: none;
@@ -24,9 +29,8 @@ background: var(--dark-blue);
 	display: flex;
 	align-items: center;
 	list-style: none;
-	font-size: .95rem;
 	font-weight: 700;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 }
 
 #menu li {
@@ -38,6 +42,7 @@ background: var(--dark-blue);
 	padding: 10px;
 	display: block;
 	color: var(--light-theme);
+	font-size: (--font-body);
 }
 
 #menu li a:focus,
@@ -58,7 +63,7 @@ background: var(--dark-blue);
 #sub-menu {
 	background: var(--dark-blue);
 	border-radius: 5px;
-	position:absolute;
+	position: absolute;
 	overflow: hidden;
 	max-height: 0;
 	transition: max-height .5s;
@@ -74,32 +79,32 @@ background: var(--dark-blue);
 }
 
 .plus {
-    margin-left: 5px;
+	margin-left: 5px;
 	float: right;
 }
 
 .plus::after,
 .plus::before {
-    content: '';
-    display: block;
-    width: 10px;
-    height: 2px;
-    background: currentColor;
-    margin-top: 6px;
-    transition: transform .5s;
-    position: relative;
+	content: '';
+	display: block;
+	width: 10px;
+	height: 2px;
+	background: currentColor;
+	margin-top: 5px;
+	transition: transform .5s;
+	position: relative;
 }
 
 .plus::after {
-    transform: rotate(90deg);
-    top: -8px;
+	transform: rotate(90deg);
+	top: -7px;
 }
 
 #menu li:hover .plus::after {
-    transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 700px) {
 
 	#menu {
 		position: absolute;
