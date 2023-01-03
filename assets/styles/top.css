@@ -1,15 +1,17 @@
 .top-container {
-	min-height: 100vh;
+	min-height: 110vh;
 	height: auto;
 	background: var(--test-blue) url(../images/bg-tech.png) center right/cover no-repeat fixed;
 	margin: 0;
-	padding: 4.375rem 20rem 4.375rem 1.875rem;
+	padding: 4rem 20rem 4rem 2rem;
 	height: 100vh;
+
+	position: relative;
 }
 
 .title-top {
 	font-size: var(--font-desktop-title);
-	margin-top: var(--margin-desktop-vertical-session);
+	margin-top: var(--margin-7);
 	font-weight: 700;
 	letter-spacing: 2px;
 }
@@ -28,12 +30,12 @@
 }
 
 .subtitle-top {
-	margin-top: 10px;
+	margin-top: var(--margin-1);
 }
 
 .btn-whats-top,
 .type-it-title {
-	margin-top: 70px;
+	margin-top: var(--margin-6);
 }
 
 .btn-whats-top {
@@ -47,7 +49,7 @@
 	cursor: pointer;
 	position: relative;
 	z-index: 0;
-	border-radius: 12px;
+	border-radius: 25px;
 	box-shadow: 0 0 20px var(--cta-color);
 	animation: floating 2s ease-in-out infinite;
 }
@@ -61,14 +63,14 @@
 	background-color: var(--cta-color);
 	left: 0;
 	top: 0;
-	border-radius: 10px;
+	border-radius: 25px;
 }
 
 .btn-whats-top::before {
 	content: "";
 	background: linear-gradient(45deg,
-			var(--cta-color), var(--test-blue), #378A27, var(--test-blue),
-			var(--cta-color), var(--test-blue), #378A27, var(--test-blue));
+			var(--cta-color), var(--test-blue), var(--cta-color), var(--test-blue),
+			var(--cta-color), var(--test-blue), var(--cta-color), var(--test-blue));
 	position: absolute;
 	top: -6px;
 	left: -6px;
@@ -79,7 +81,7 @@
 	filter: blur(8px);
 	animation: glowing 20s linear infinite;
 	transition: opacity .3s ease-in-out;
-	border-radius: 10px;
+	border-radius: 25px;
 }
 
 @keyframes glowing {
@@ -128,31 +130,17 @@
 
 	.title-top {
 		font-size: var(--font-mobile-title);
-		margin-top: var(--margin-mobile-vertical-session);
-		font-weight: 700;
-		letter-spacing: 2px;
-	}
-
-	.type-it-title {
-		font-size: 1.625rem;
-		font-weight: 700;
-	}
-
-	.subtitle-top,
-	.type-it {
-		font-size: var(--font-body);
-		line-height: 150%;
-		letter-spacing: 2px;
-		font-weight: 500;
+		margin-top: var(--margin-3);
 	}
 
 	.subtitle-top {
-		margin-top: 10px;
+		margin-top: var(--margin-2);
 	}
 
 	.btn-whats-top,
 	.type-it-title {
-		margin-top: 60px;
+		margin-top: var(--margin-8);
 	}
+
 
 }

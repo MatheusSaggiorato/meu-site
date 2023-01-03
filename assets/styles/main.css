@@ -55,7 +55,7 @@ body::-webkit-scrollbar-thumb {
 html {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-    scroll-padding-top: 75px;
+    scroll-padding-top: 50px;
 }
 
 body {
@@ -64,30 +64,248 @@ body {
     color: var(--light-theme);
 }
 
+.custom-shape-divider-bottom-1672724897 {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
-#sobre,
-#contato {
-    color: var(--light-theme);
-    padding: 30px;
+.custom-shape-divider-bottom-1672724897 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 58px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1672724897 .shape-fill {
+    fill: var(--dark-blue);
+}
+
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1672724897 svg {
+        width: calc(162% + 1.3px);
+        height: 36px;
+    }
+}
+
+.sessions {
+    padding: 4rem 2rem;
 }
 
 #sobre {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--dark-theme);
+    flex-direction: column;
+    background: var(--dark-blue);
+
 }
 
-
 .my-image {
-    width: 200px;
+    float: right;
+    width: 300px;
     border-radius: 50%;
 }
 
-.formContainer {
+.title-session {
+    font-size: var(--font-desktop-title);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: var(--margin-6);
+}
+
+.subtitle-session {
+    margin-top: var(--margin-6);
+    font-size: var(--font-body);
+    line-height: 150%;
+    font-weight: 500;
+    margin-right: 10rem;
+}
+
+.title-techs {
+    margin-top: var(--margin-8);
+    font-size: var(--font-desktop-title);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.techs-container {
+    margin-top: var(--margin-3);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.techs {
+    height: 3rem;
+    color: var(--light-theme);
+    border-radius: 50%;
+    /*o efeito de tooltip nas ".techs" está sendo usado com as mesmas classes da pasta "footer.css"*/
+}
+
+.tip-box:hover .fa-html5 {
+    color: #F16529;
+}
+
+.tip-box:hover .fa-css3-alt {
+    color: #0089CA;
+}
+
+.tip-box:hover .fa-js {
+    color: #F8DC3E;
+}
+
+.tip-box:hover .fa-node {
+    color: #539E43;
+}
+
+.tip-box:hover .fa-git-alt {
+    color: #F03C2E;
+}
+
+.tip-box:hover .fa-wordpress {
+    color: #1B769C;
+}
+
+.figma-logo {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.right {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.circle {
+    border-radius: 50px;
+}
+
+.clip {
+    border-bottom-right-radius: 50px;
+}
+
+.element {
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.orange {
+    background: transparent;
+}
+
+.purple {
+    background: transparent;
+}
+
+.blue {
+    background: transparent;
+}
+
+.green {
+    background: transparent;
+}
+
+.tip-box:hover .element {
+    background: #FF0000;
+    border: none;
+}
+
+.tip-box:hover .orange {
+    background: #FB7266;
+}
+
+.tip-box:hover .purple {
+    background: #A061FA;
+}
+
+.tip-box:hover .blue {
+    background: #2EBDFA;
+}
+
+.tip-box:hover .green {
+    background: #00CE84;
+}
+
+.tip-box:hover .fa-react {
+    color: #09D9FE;
+}
+
+.tip-box:hover .fa-bootstrap {
+    color: #850AFA;
+}
+
+@media screen and (max-width: 500px) {
+    .my-image {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 993px) {
+
+    .my-image {
+        float: none;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .title-session {
+        font-size: var(--font-mobile-title);
+    }
+
+    .subtitle-session {
+        margin-right: 0;
+    }
+
+    .title-techs {
+        margin-top: var(--margin-8);
+        font-size: var(--font-desktop-title);
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .techs-container {
+        margin-top: var(--margin-3);
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+
+
+.form-container {
     width: 40%;
     margin-top: 20px;
+}
 
+.google {
+    height: 43px;
+}
+
+.tip-box:hover .google-white,
+.google-color {
+    display: none;
+}
+
+.tip-box:hover .google-color {
+    display: block;
 }
 
 .form-control {
