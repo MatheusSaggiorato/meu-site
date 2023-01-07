@@ -4,8 +4,6 @@
 	background: var(--test-blue) url(../images/bg-tech.png) center right/cover no-repeat fixed;
 	margin: 0;
 	padding: 4rem 20rem 4rem 2rem;
-	height: 100vh;
-
 	position: relative;
 }
 
@@ -51,7 +49,6 @@
 	z-index: 0;
 	border-radius: 25px;
 	box-shadow: 0 0 20px var(--cta-color);
-	animation: floating 2s ease-in-out infinite;
 }
 
 .btn-whats-top::after {
@@ -82,6 +79,7 @@
 	animation: glowing 20s linear infinite;
 	transition: opacity .3s ease-in-out;
 	border-radius: 25px;
+	
 }
 
 @keyframes glowing {
@@ -98,26 +96,12 @@
 	}
 }
 
-@keyframes floating {
-	0% {
-		transform: translateY(0);
-	}
-
-	50% {
-		transform: translateY(-10px);
-	}
-
-	100% {
-		transform: translateY(0);
-	}
-}
-
-.btn-whats-top:hover {
-	color: var(--light-theme);
-}
-
-.btn-whats-top:active:after {
+.btn-whats-top:hover::after {
 	background: transparent;
+}
+
+.btn-whats-top:active {
+	transform: scale(0.9);
 }
 
 @media screen and (max-width: 900px) {
@@ -143,4 +127,11 @@
 	}
 
 
+}
+
+@media screen and (max-width: 300px) {
+    .top-container {
+        padding: 4rem .5rem;
+    }
+    
 }

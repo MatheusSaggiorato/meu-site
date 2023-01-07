@@ -2,7 +2,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.3rem 2rem;
+	padding: 0.3rem 3.75rem;
 	top: 0;
 	width: 100%;
 	font-size: 0.875rem;
@@ -102,6 +102,13 @@ background: rgb(21, 21, 21) url(../images/bg-tech2.png) center right/cover no-re
 
 #menu li:hover .plus::after {
 	transform: rotate(180deg);
+}
+
+@media screen and (max-width: 450px)  {
+	
+	header {
+		padding: 0.3rem 2rem;
+	}
 }
 
 @media screen and (max-width: 700px) {
