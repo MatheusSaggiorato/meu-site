@@ -1,0 +1,209 @@
+.custom-shape-divider-bottom-1672724897 {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1672724897 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 58px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1672724897 .shape-fill {
+    fill: var(--dark-blue);
+}
+
+.sessions {
+    padding: 4rem 2rem;
+}
+
+#sobre {
+    background: var(--dark-blue);
+}
+
+.image-container {
+    position: relative;
+}
+
+.my-image {
+    float: right;
+    width: 300px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.image-container::after {
+    content: "";
+    z-index: 1000;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+    border-top: 8px solid var(--cta-color);
+    border-bottom: 8px solid var(--test-blue);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.title-about {
+    font-size: var(--font-desktop-title);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: var(--margin-6);
+}
+
+.about-me {
+    margin-top: var(--margin-6);
+    font-size: var(--font-body);
+    line-height: 150%;
+    font-weight: 500;
+    margin-right: 10rem;
+}
+
+.title-techs {
+    font-size: var(--font-desktop-title);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.techs-bg {
+    margin: auto;
+    width: 90%;
+    margin-top: var(--margin-7);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.techs-container {
+    margin-top: var(--margin-3);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.techs {
+    height: 3rem;
+    color: var(--light-theme);
+    border-radius: 50%;
+    /*o efeito de tooltip nas ".techs" está sendo usado com as mesmas classes da pasta "footer.css"*/
+}
+
+.tip-box:hover .fa-html5 {
+    color: #F16529;
+}
+
+.tip-box:hover .fa-css3-alt {
+    color: #0089CA;
+}
+
+.tip-box:hover .fa-js {
+    color: #F8DC3E;
+}
+
+.tip-box:hover .fa-node {
+    color: #539E43;
+}
+
+.tip-box:hover .fa-git-alt {
+    color: #F03C2E;
+}
+
+.tip-box:hover .fa-wordpress {
+    color: #1B769C;
+}
+
+.tip-box:hover .fa-react {
+    color: #09D9FE;
+}
+
+.tip-box:hover .fa-bootstrap {
+    color: #850AFA;
+}
+
+.google-color, .google-white, 
+.figma-color, .figma-white {
+    height: 3.3rem;
+}
+
+.figma-color, .google-color, .tip-box:hover .figma-white, .tip-box:hover .google-white {
+    display: none;
+}
+
+.tip-box:hover .google-color, .tip-box:hover .figma-color {
+    display: block;
+}
+
+@media screen and (max-width: 993px) {
+
+    .my-image {
+        float: none;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .image-container::after {
+        left: 50%;
+        margin-left: -145px;
+    }
+
+    .title-about, .title-techs {
+        font-size: var(--font-mobile-title);
+    }
+
+    .about-me {
+        margin-right: 0;
+    }
+
+    .title-techs {
+        font-size: var(--font-mobile-title);
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .custom-shape-divider-bottom-1672724897 svg {
+        width: calc(162% + 1.3px);
+        height: 36px;
+    }
+
+    .my-image {
+        width: 200px;
+    }
+
+    .image-container::after {
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+    }
+
+    .techs-bg {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .sessions {
+        padding: 4rem .5rem;
+    }
+}

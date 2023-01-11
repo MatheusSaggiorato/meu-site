@@ -42,7 +42,7 @@ background: rgb(21, 21, 21) url(../images/bg-tech2.png) center right/cover no-re
 	padding: 10px;
 	display: block;
 	color: var(--light-theme);
-	font-size: (--font-body);
+	font-size: 1rem;
 }
 
 #menu li a:focus,
