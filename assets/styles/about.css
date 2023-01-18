@@ -17,15 +17,12 @@
 }
 
 .custom-shape-divider-bottom-1672724897 .shape-fill {
-    fill: var(--dark-blue);
-}
-
-.sessions {
-    padding: 4rem 2rem;
+    fill: var(--light-theme);
 }
 
 #sobre {
-    background: var(--dark-blue);
+    background: var(--light-theme);
+    color: var(--dark-blue);
 }
 
 .image-container {
@@ -80,6 +77,7 @@
     font-size: var(--font-desktop-title);
     font-weight: 700;
     letter-spacing: 2px;
+    color: var(--light-theme);
 }
 
 .techs-bg {
@@ -91,7 +89,8 @@
     flex-direction: column;
     text-align: center;
     padding: 1rem;
-    border-radius: 20px;
+    border-radius: 1rem;
+    background-color: var(--test-blue);
 }
 
 .techs-container {

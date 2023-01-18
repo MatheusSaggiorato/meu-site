@@ -1,7 +1,7 @@
 .top-container {
 	min-height: 110vh;
 	height: auto;
-	background: var(--test-blue) url(../images/bg-tech.png) center right/cover no-repeat fixed;
+	background: var(--test-blue) url(../images/bg-tech.png) bottom right/cover no-repeat fixed;
 	margin: 0;
 	padding: 4rem 20rem 4rem 2rem;
 	position: relative;
@@ -9,7 +9,7 @@
 
 .title-top {
 	font-size: var(--font-desktop-title);
-	margin-top: var(--margin-8);
+	margin-top: 8rem;
 	font-weight: 700;
 	letter-spacing: 2px;
 }

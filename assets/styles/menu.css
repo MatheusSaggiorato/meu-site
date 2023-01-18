@@ -2,23 +2,22 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.3rem 3.75rem;
+	padding: .4rem 3.75rem;
 	top: 0;
 	width: 100%;
 	font-size: 0.875rem;
 	position: fixed;
 	z-index: 2000;
-	background: rgb(21, 21, 21) url(../images/bg-universe.png) center right/cover no-repeat fixed;
+	background: transparent;
 }
 
 .logo {
-	height: 40px;
+	height: 50px;
 }
 
-/* .header-on-scroll {
+.header-on-scroll {
 background: var(--test-blue);
-background: rgb(21, 21, 21) url(../images/bg-tech2.png) center right/cover no-repeat fixed;
-} */
+}
 
 #btn-mobile {
 	display: none;
@@ -111,7 +110,7 @@ background: rgb(21, 21, 21) url(../images/bg-tech2.png) center right/cover no-re
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
 
 	#menu {
 		position: absolute;

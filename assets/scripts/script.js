@@ -57,11 +57,11 @@ window.onscroll = function () {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     btnBackToTop.classList.add('back-to-top-active')
     btnBackToTop.classList.remove('back-to-top-inactive');
-    /* header.classList.add('header-on-scroll'); */
+    header.classList.add('header-on-scroll');
   } else {
     btnBackToTop.classList.add('back-to-top-inactive')
     btnBackToTop.classList.remove('back-to-top-active');
-    /* header.classList.remove('header-on-scroll'); */
+    header.classList.remove('header-on-scroll');
   }
 
 }
