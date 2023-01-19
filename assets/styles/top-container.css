@@ -2,7 +2,6 @@
 	min-height: 110vh;
 	height: auto;
 	background: var(--test-blue) url(../images/bg-tech.png) bottom right/cover no-repeat fixed;
-	margin: 0;
 	padding: 4rem 20rem 4rem 2rem;
 	position: relative;
 }
@@ -104,6 +103,28 @@
 	transform: scale(0.9);
 }
 
+.custom-shape-divider-bottom-1672724897 {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1672724897 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 58px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1672724897 .shape-fill {
+    fill: var(--light-theme);
+}
+
 @media screen and (max-width: 900px) {
 
 
@@ -129,6 +150,13 @@
 	.btn-whats-top {
 		font-size: var(--font-mobile-title);
 	}
+}
+
+@media screen and (max-width: 500px) {
+    .custom-shape-divider-bottom-1672724897 svg {
+        width: calc(162% + 1.3px);
+        height: 36px;
+    }
 }
 
 @media screen and (max-width: 300px) {
