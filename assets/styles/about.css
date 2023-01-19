@@ -1,3 +1,8 @@
+#sobre {
+    background: var(--light-theme);
+    color: var(--dark-blue);
+
+}
 .custom-shape-divider-bottom-1672724897 {
     position: absolute;
     bottom: -4px;
@@ -20,10 +25,6 @@
     fill: var(--light-theme);
 }
 
-#sobre {
-    background: var(--light-theme);
-    color: var(--dark-blue);
-}
 
 .image-container {
     position: relative;
@@ -202,7 +203,7 @@
 }
 
 @media screen and (max-width: 300px) {
-    .sessions {
-        padding: 4rem .5rem;
+    #sobre {
+        padding: 4rem .75rem;
     }
 }

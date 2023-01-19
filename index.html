@@ -171,47 +171,54 @@
 
   <section id="contato" class="sessions">
 
-    <div>
+    <div class="container-links-contact">
 
-      <a href="mailto:matheussaggiorato@gmail.com" target="_blank"><h2><i class="fa-solid fa-envelope"></i>Matheussaggiorato@gmail.com</h2></a>
-      <a href="" target="_blank"><h2><i class="fa-solid fa-phone"></i>(54)99974-8017</h2></a>
-      <a><h2><i class="fa-solid fa-location-dot"></i>Passo Fundo - RS</h2></a>
+      <a class="links-contact" href="mailto:matheussaggiorato@gmail.com" target="_blank">
+        <i class="envelope-contact fa-solid fa-envelope"></i>Matheussaggiorato@gmail.com
+      </a>
+
+      <a class="links-contact" href="mailto:matheussaggiorato@gmail.com" target="_blank">
+        <i class="whatsapp-contact fa-brands fa-whatsapp"></i>(54) 99974-8017
+      </a>
+
+      <a class="links-contact" href="mailto:matheussaggiorato@gmail.com" target="_blank">
+        <i class="location-contact fa-solid fa-location-dot"></i>Passo Fundo - RS
+      </a>
 
     </div>
-  
+
     <div class="form-container">
 
       <h1 class="title-contact">Deixe sua mensagem que entraremos em contato</h1>
 
-        <div class="input-group">
-          <form action="contatoenvia" method="post" class="form" autocomplete="off">
-            <input type="hidden" name="resultado" value="7">
-            <input type="text" name="nome" class="input" id="name" data-msg="Campo Obrigátorio" required="required"
-              autocomplete="off">
-            <label class="user-label">Nome</label>
-          </form>
-        </div>
+      <div class="input-group">
+        <form action="contatoenvia" method="post" class="form" autocomplete="off">
+          <input type="hidden" name="resultado" value="7">
+          <input type="text" name="nome" class="input" id="name" data-msg="Campo Obrigátorio" required="required"
+            autocomplete="off">
+          <label class="user-label">Nome</label>
+        </form>
+      </div>
 
-        <div class="input-group">
-          <input type="email" class="input" name="email" id="email" data-rule="email"
-            data-msg="Campo obrigatório com e-mail válido" required="required" autocomplete="off">
-          <label class="user-label">E-mail</label>
-        </div>
+      <div class="input-group">
+        <input type="email" class="input" name="email" id="email" data-rule="email"
+          data-msg="Campo obrigatório com e-mail válido" required="required" autocomplete="off">
+        <label class="user-label">E-mail</label>
+      </div>
 
-        <div class="input-group">
-          <input type="tel" class="input" name="fone" attrname="telephone1" id="subject" data-rule="minlen:4"
-            data-msg="Campo obrigatório" required="required" autocomplete="off">
-          <label class="user-label">Telefone</label>
-        </div>
+      <div class="input-group">
+        <input type="tel" class="input" name="fone" attrname="telephone1" id="subject" data-rule="minlen:4"
+          data-msg="Campo obrigatório" required="required" autocomplete="off">
+        <label class="user-label">Telefone</label>
+      </div>
 
-        <div class="input-group">
-          <input  type="text" class="input" name="mensagem" data-rule="required" data-msg="Campo obrigatório"
-            required="required" autocomplete="off"></input>
-          <label class="user-label">Mensagem</label>
-        </div>
+      <div class="input-group">
+        <input type="text" class="input" name="mensagem" data-rule="required" data-msg="Campo obrigatório"
+          required="required" autocomplete="off"></input>
+        <label class="user-label">Mensagem</label>
+      </div>
 
-        <button class="form-button">Enviar</button>
-
+      <button class="form-button">Enviar</button>
 
     </div>
 
@@ -222,6 +229,8 @@
   <footer class="main-footer">
 
     <div class="social-midias-container">
+
+      <img class="logo-footer" src="./assets/images/logo-sem-nome-sem-fundo.png" alt="logo Matheus Saggiorato">
 
       <a href="" target="_blank">
         <div class="tip-box">
@@ -249,14 +258,12 @@
 
     </div>
 
-    <div>
-      <a class="termos-footer" href="#">termos de uso</a>
-      <a class="termos-footer" href="#">Política de privacidade</a>
-    </div>
-
-    <div class="copy-logo-container">
-      <img class="logo-footer" src="./assets/images/logo-sem-nome-sem-fundo.png" alt="logo Matheus Saggiorato">
-      <p class="copy-footer">&#169; 2022 Matheus Saggiorato - Passo Fundo - RS</p>
+    <div class="copy-footer-container">
+      <p class="copy-footer">&#169; Copyright 2022 Matheus Saggiorato Web Developer</p>
+      <div>
+        <a class="termos-footer" href="#">termos de uso</a>
+        <a class="termos-footer" href="#">Política de privacidade</a>
+      </div>
     </div>
 
   </footer>

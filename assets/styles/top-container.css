@@ -133,7 +133,6 @@
 
 @media screen and (max-width: 300px) {
     .top-container {
-        padding: 4rem .5rem;
+        padding: 4rem .75rem;
     }
-    
 }

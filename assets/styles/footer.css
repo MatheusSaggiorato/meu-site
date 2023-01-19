@@ -2,18 +2,16 @@
 	position: relative;
 	background: var(--dark-blue);
 	color: var(--light-theme);
-	padding: 20px;
+	padding: 1.25rem 3.75rem;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
 	gap: 20px;
 	background: var(--dark-blue);
-
 }
 
 .logo-footer {
-	width: 70px;
-	float: left;
+	width: 90px;
 }
 
 .icon-social-midia {
@@ -27,8 +25,8 @@
 .termos-footer {
 	color: var(--light-theme);
 	white-space: nowrap;
-	text-align: center;
 	margin-left: .5rem;
+	text-decoration: none;
 }
 
 .termos-footer:hover {
@@ -37,19 +35,24 @@
 
 .copy-footer,
 .termos-footer {
-	text-align: center;
-	font-size: 0.875rem;
+	font-size: 0.75rem;
 	font-weight: 700;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
+	text-align: center;
 }
 
-.social-midias-container,
-.copy-logo-container {
+.social-midias-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 15px;
+	gap: 1.25rem;
+}
 
+.copy-footer-container {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+ gap: .625rem;
 }
 
 .tip-box:hover .fa-whatsapp {
@@ -187,16 +190,20 @@
     background-color: var(--third-blue);
 }
 
-@media screen and (max-width: 500px) {
-	.logo-footer {
-		display: none;
+@media screen and (max-width: 800px) {
+
+	.main-footer {
+		flex-direction: column;
 	}
 
-	.termos-footer {
-		display: block;
-	}
+	.copy-footer-container {
+		align-items: center;
+	   }
+	   
+}
 
-	.termos-footer {
-		white-space: normal;
-	}
+@media screen and (max-width: 300px) {
+    .main-footer {
+        padding: 4rem .75rem;
+    }
 }

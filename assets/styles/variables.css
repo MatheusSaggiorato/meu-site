@@ -9,7 +9,6 @@
 	--font-caption: .75rem;
 
 
-
 	--margin-1: .5rem;
 	--margin-2: 1rem;
 	--margin-3: 1.5rem;
@@ -22,8 +21,6 @@
 	--margin-10: 5rem;
 
 
-
-
 	--test-blue: #264282;
 	--dark-blue: #00061E;
 	--first-blue: #162C40;
@@ -31,6 +28,7 @@
 	--third-blue: #498BA6;
 	--fourth-blue: #B4D2D9;
 	--dark-theme: #0D0D0D;
+	--medium-dark: #262626;
 	--light-theme: #FAFBFD;
 	--cta-color: #8A1210;
 	--ti-cursor-color: var(--light-theme);
