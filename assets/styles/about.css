@@ -144,28 +144,6 @@
     display: block;
 }
 
-.custom-shape-divider-bottom-1674094721 {
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1674094721 svg {
-    position: relative;
-    display: block;
-    width: calc(139% + 1.3px);
-    height: 58px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1674094721 .shape-fill {
-    fill: var(--medium-dark);
-}
-
 @media screen and (max-width: 993px) {
 
     .my-image {
@@ -194,11 +172,6 @@
 }
 
 @media screen and (max-width: 500px) {
-
-    .custom-shape-divider-bottom-1674094721 svg {
-        width: calc(162% + 1.3px);
-        height: 36px;
-    }
 
     .my-image {
         width: 200px;

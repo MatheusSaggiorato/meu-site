@@ -1,0 +1,41 @@
+#portfolio {
+    position: relative;
+    background: var(--light-theme);
+}
+
+.custom-shape-divider-top-1674275337 {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1674275337 svg {
+    position: relative;
+    display: block;
+    width: calc(102% + 1.3px);
+    height: 78px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1674275337 .shape-fill {
+    fill: #262626;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-top-1674275337 svg {
+        width: calc(113% + 1.3px);
+        height: 32px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1674275337 svg {
+        width: calc(116% + 1.3px);
+        height: 21px;
+    }
+}

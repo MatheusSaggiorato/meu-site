@@ -1,5 +1,27 @@
 #contato {
     background: var(--medium-dark);
+    position: relative;
+}
+
+.custom-shape-divider-top-1674275839 {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1674275839 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 32px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1674275839 .shape-fill {
+    fill: #FAFBFD;
 }
 
 .form-container {
@@ -99,6 +121,22 @@ input:valid~label {
     box-shadow: 0px 0px 30px rgb(94, 94, 94);
     -moz-box-shadow: 0px 0px 30px rgb(94, 94, 94);
     -webkit-box-shadow: 0px 0px 30px rgb(94, 94, 94);
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-top-1674275839 svg {
+        width: calc(100% + 1.3px);
+        height: 27px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1674275839 svg {
+        width: calc(100% + 1.3px);
+        height: 19px;
+    }
 }
 
 @media screen and (max-width: 750px) {
