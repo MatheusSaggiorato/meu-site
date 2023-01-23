@@ -71,3 +71,33 @@ function BackToTopFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+//Carousel
+
+window.addEventListener('load', function(){
+  new Glider(document.querySelector('.glider'), {
+    // Mobile-first defaults
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    scrollLock: true,
+    dots: '#dots',
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    },
+    responsive: [
+      {
+        // screens greater than >= 775px
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          itemWidth: 150,
+          duration: 0.25,
+          dots: '.dots'
+        }
+      },
+    ]
+  });
+});

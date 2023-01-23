@@ -1,13 +1,13 @@
 .main-footer {
 	position: relative;
-	background: var(--dark-blue);
+	background: var(--test-blue);
 	color: var(--light-theme);
 	padding: 1.25rem 3.75rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
 	gap: 20px;
-	background: var(--dark-blue);
+	
 }
 
 .logo-footer {

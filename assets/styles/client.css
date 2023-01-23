@@ -1,3 +1,148 @@
 #clientes {
-    background: var(--medium-dark);
+    background: var(--test-blue);
+    position: relative;
+}
+
+.custom-shape-divider-top-1674275839 {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1674275839 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 35px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1674275839 .shape-fill {
+    fill: var(--light-theme);
+}
+
+.testimonyal-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--margin-8);
+}
+
+.title-clientes {
+    font-size: var(--font-desktop-title);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: var(--margin-8);
+    margin-bottom: var(--margin-6);
+}
+
+.card {
+    width: 350px;
+    height: auto;
+    background: var(--light-theme);
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 8px 8px 7px var(--dark-blue);
+}
+
+.foto-cliente {
+    width: 90px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.card h2 {
+    z-index: 1000;
+    color: var(--test-blue);
+    font-size: var(--font-desktop-subtitle);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+    color: var(--test-blue);
+    z-index: 1000;
+    font-size: 2rem;
+}
+
+.fa-quote-left {
+    margin-right: 1rem;
+
+}
+
+.fa-quote-right {
+    margin-left: 1rem;
+}
+
+.testimony {
+    color: var(--test-blue);
+    z-index: 1000;
+    font-size: var(--font-body);
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    background: var(--light-theme);
+    inset: 4px;
+    border-radius: 1rem;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 130%;
+    transition: all 1s linear;
+}
+
+.card:hover {
+    transform: scale(0.98);
+}
+
+.card:hover::before {
+    background: var(--cta-color);
+    animation: border-rotate 6s linear infinite;
+}
+
+@keyframes border-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .custom-shape-divider-top-1674275839 svg {
+        width: calc(100% + 1.3px);
+        height: 30px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+
+    .custom-shape-divider-top-1674275839 svg {
+        width: calc(100% + 1.3px);
+        height: 16px;
+    }
 }

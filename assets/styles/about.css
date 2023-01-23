@@ -46,15 +46,17 @@
     font-size: var(--font-desktop-title);
     font-weight: 700;
     letter-spacing: 2px;
-    margin-top: var(--margin-6);
+    margin-top: var(--margin-8);
+    margin-bottom: var(--margin-6);
+    color: var(--test-blue);
 }
 
 .about-me {
-    margin-top: var(--margin-6);
     font-size: var(--font-body);
     line-height: 150%;
     font-weight: 500;
     margin-right: 10rem;
+    color: var(--test-blue);
 }
 
 .title-techs {
@@ -174,7 +176,7 @@
 @media screen and (max-width: 500px) {
 
     .my-image {
-        width: 200px;
+        width: 12.5rem;
     }
 
     .image-container::after {

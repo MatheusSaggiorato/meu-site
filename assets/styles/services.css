@@ -1,6 +1,6 @@
 #servicos {
     position: relative;
-    background: var(--medium-dark);
+    background: var(--test-blue);
 }
 
 .custom-shape-divider-top-1674275574 {
@@ -20,40 +20,34 @@
 }
 
 .custom-shape-divider-top-1674275574 .shape-fill {
-    fill: #FAFBFD;
-}
-
-.services-container {
-    flex-wrap: wrap;
-    display: flex;
-    gap: 30px;
+    fill: var(--light-theme);
 }
 
 .title-services {
     font-size: var(--font-desktop-title);
     font-weight: 700;
     letter-spacing: 2px;
-    margin-top: var(--margin-6);
+    margin-top: var(--margin-8);
     margin-bottom: var(--margin-6);
 }
 
 .service-name {
-    color: var(--dark-blue);
+    color: var(--test-blue);
     font-size: var(--font-desktop-subtitle);
     text-align: center;
     font-weight: 800;
 }
 
 .service-description {
-    color: var(--dark-blue);
+    color: var(--test-blue);
     text-align: center;
     letter-spacing: 1px;
     font-size: var(--font-body);
 }
 
 .service-image {
- width: 120px;
- height: auto;
+    width: 120px;
+    height: auto;
 }
 
 .service-box {
@@ -63,27 +57,54 @@
     align-items: center;
     gap: 2rem;
     background: var(--light-theme);
-    width: 33%;
-    height: 30rem;
     padding: 1rem;
     border-radius: 1rem;
+    margin: 1rem;
 }
 
 .service-box:hover {
-    box-shadow: 0 0 1rem .4rem var(--test-blue);
+    box-shadow: 8px 8px 7px var(--dark-blue);
+    transform: scale(.98);
 }
 
+.glider-prev,
+.glider-next {
+    color: var(--light-theme);
+}
 
+.custom-shape-divider-bottom-1674431334 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
+.custom-shape-divider-bottom-1674431334 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+    transform: rotateY(180deg);
+}
 
-
+.custom-shape-divider-bottom-1674431334 .shape-fill {
+    fill: var(--light-theme);
+}
 
 
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {
     .custom-shape-divider-top-1674275574 svg {
         width: calc(100% + 1.3px);
-        height: 56px;
+        height: 70px;
+    }
+
+    .custom-shape-divider-bottom-1674431334 svg {
+        width: calc(100% + 1.3px);
+        height: 35px;
     }
 }
 
@@ -91,6 +112,11 @@
 @media (max-width: 767px) {
     .custom-shape-divider-top-1674275574 svg {
         width: calc(100% + 1.3px);
-        height: 42px;
+        height: 50px;
+    }
+
+    .custom-shape-divider-bottom-1674431334 svg {
+        width: calc(100% + 1.3px);
+        height: 20px;
     }
 }

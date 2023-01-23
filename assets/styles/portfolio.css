@@ -3,26 +3,20 @@
     background: var(--light-theme);
 }
 
-.custom-shape-divider-top-1674275337 {
-    position: absolute;
-    top: -2px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+.title-portfolio {
+    color: var(--test-blue);
+    margin-top: var(--margin-8);
+    margin-bottom: var(--margin-6);
+    font-size: var(--font-desktop-title);
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
-.custom-shape-divider-top-1674275337 svg {
-    position: relative;
-    display: block;
-    width: calc(102% + 1.3px);
-    height: 78px;
-    transform: rotateY(180deg);
+.image-portfolio {
+    width: 50%;
+    height: auto;
 }
 
-.custom-shape-divider-top-1674275337 .shape-fill {
-    fill: #262626;
-}
 
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {

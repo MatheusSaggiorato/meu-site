@@ -117,12 +117,12 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 56px;
+    height: 40px;
     transform: rotateY(180deg);
 }
 
 .custom-shape-divider-bottom-1674274096 .shape-fill {
-    fill: #FAFBFD;
+    fill: var(--light-theme);
 }
 
 
@@ -156,7 +156,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
     .custom-shape-divider-bottom-1674274096 svg {
         width: calc(113% + 1.3px);
-        height: 44px;
+        height: 35px;
     }
 }
 
@@ -164,7 +164,7 @@
 @media (max-width: 767px) {
     .custom-shape-divider-bottom-1674274096 svg {
         width: calc(116% + 1.3px);
-        height: 32px;
+        height: 20px;
     }
 }
 

@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--light-theme);
+    background: #cfcfcf;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -70,4 +70,8 @@ body {
 
 .sessions {
     padding: 4rem 2rem;
+}
+
+html {
+    overflow-x: hidden;
 }
