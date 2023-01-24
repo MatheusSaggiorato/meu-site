@@ -54,7 +54,6 @@
 .about-me {
     font-size: var(--font-body);
     line-height: 150%;
-    font-weight: 500;
     margin-right: 10rem;
     color: var(--test-blue);
 }
