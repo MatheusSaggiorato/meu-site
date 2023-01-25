@@ -10,12 +10,68 @@
     font-size: var(--font-desktop-title);
     font-weight: 700;
     letter-spacing: 2px;
+    text-align: center;
 }
 
-.image-portfolio {
-    width: 50%;
-    height: auto;
+.filter-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: var(--margin-6);
 }
+
+.filter-menu button {
+    padding: 1rem;
+    font-size: var(--font-body);
+    background-color: var(--third-blue);
+    color: var(--light-theme);
+    border-radius: 1rem;
+    border: none;
+    transition: all 300ms linear;
+}
+
+.filter-menu button.active,
+.filter-menu button:hover {
+    background-color: var(--test-blue);
+}
+
+.grid-item {
+    width:30%;
+    text-align: center;
+    margin: 1rem;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+@media(max-width: 1050px) {
+
+    .grid-item {
+        width: 50%;
+    }
+}
+
+@media(max-width: 699px) {
+
+    .grid-item {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /** For tablet devices **/

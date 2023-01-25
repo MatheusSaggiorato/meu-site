@@ -69,13 +69,7 @@
 
 .responsive {
     margin: auto;
-    background: var(--second-blue);
     border-radius: 1rem;
-    box-shadow:
-        1.7px 2.4px 55.7px  var(--second-blue),
-        4.6px 6.5px 55.6px  var(--second-blue),
-        11.2px 15.7px 50.1px  var(--second-blue),
-        37px 52px 47px var(--second-blue);
 }
 
 .custom-shape-divider-bottom-1674431334 {

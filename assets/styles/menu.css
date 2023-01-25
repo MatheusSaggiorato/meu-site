@@ -51,7 +51,7 @@ background: var(--test-blue);
 	border-radius: 5px;
 }
 
-#menu li ul li {
+/* #menu li ul li {
 	border: 1px solid var(--light-theme);
 }
 
@@ -66,7 +66,6 @@ background: var(--test-blue);
 	overflow: hidden;
 	max-height: 0;
 	transition: max-height .5s;
-	/* white-space: nowrap;*/
 }
 
 #menu li:hover #sub-menu,
@@ -101,7 +100,7 @@ background: var(--test-blue);
 
 #menu li:hover .plus::after {
 	transform: rotate(180deg);
-}
+} */
 
 @media screen and (max-width: 450px)  {
 	
@@ -115,10 +114,9 @@ background: var(--test-blue);
 	#menu {
 		position: absolute;
 		width: auto;
-		top: 4rem;
+		top: 3.7rem;
 		z-index: 1000;
 		right: 0;
-		border-radius: 5px;
 		padding: 10px;
 		gap: 15px;
 		position: absolute;
@@ -128,7 +126,7 @@ background: var(--test-blue);
 		text-align: end;
 	}
 
-	#menu li ul {
+/* 	#menu li ul {
 		position: relative;
 		transition: max-height .5s;
 		text-align: start;
@@ -141,7 +139,7 @@ background: var(--test-blue);
 	.plus {
 		position: absolute;
 	}
-
+ */
 	#nav.active #menu {
 		height: 100vh;
 		border-radius: 5px;

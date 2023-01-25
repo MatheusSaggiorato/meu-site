@@ -25,7 +25,8 @@
 
       <ul id="menu" role="menu">
         <li><a class="links-menu" href="#sobre">Quem sou?</a></li>
-        <li><a id="btn-dropdown" href="#servicos">Serviços
+        <li><a class="links-menu" href="#servicos">Serviços</a></li>
+ <!--        <li><a id="btn-dropdown" href="#servicos">Serviços
             <span class="plus"></span></a>
           <ul id="sub-menu">
             <li><a class="links-menu" href="#">Desenvolvimento e manutenção de sites</a></li>
@@ -33,7 +34,7 @@
             <li><a class="links-menu" href="#">Desenvolvimento web em geral</a></li>
             <li><a class="links-menu" href="#">Ui/ux design</a></li>
           </ul>
-        </li>
+        </li> -->
         <li><a class="links-menu" href="#portfolio">Portfólio</a></li>
         <li><a class="links-menu" href="#clientes">Clientes</a></li>
         <li><a class="links-menu" href="#contato">Contato</a></li>
@@ -260,15 +261,45 @@
 
     <h1 class="title-portfolio">Portfólio</h1>
 
-    <div class="portfolio-container">
-      <img class="image-portfolio" src="./assets/images/portfolio1.jpg" alt="imagem da home de um site">
-      <img class="image-portfolio" src="./assets/images/portfolio2.jpg" alt="imagem da home de um site">
-      <img class="image-portfolio" src="./assets/images/portfolio1.jpg" alt="imagem da home de um site">
-      <img class="image-portfolio" src="./assets/images/portfolio2.jpg" alt="imagem da home de um site">
-      <img class="image-portfolio" src="./assets/images/portfolio1.jpg" alt="imagem da home de um site">
-      <img class="image-portfolio" src="./assets/images/portfolio2.jpg" alt="imagem da home de um site">
-      <img class="image-portfolio" src="./assets/images/portfolio1.jpg" alt="imagem da home de um site">
-      <img class="image-portfolio" src="./assets/images/portfolio2.jpg" alt="imagem da home de um site">
+    <div class="filter-menu">
+			<button class="active" data-filter="*">All</button>
+			<button data-filter=".ecommerce">ecommerce</button>
+			<button data-filter=".landing-page">landing-page</button>
+			<button data-filter=".oficina">oficina</button>
+			<button data-filter=".estetica-automotiva">estetica-automotiva</button>
+			<button data-filter=".ecommerce:not(.landing-page)">ecommerce but not landing-page</button>
+		</div>
+
+    <div class="grid">
+
+      <div class="grid-item ecommerce">
+        <img src="./assets/images/portfolio2.jpg" alt="imagem da home de um site">
+      </div>
+
+      <div class="grid-item landing-page">
+        <img src="./assets/images/portfolio1.jpg" alt="imagem da home de um site">
+      </div>
+
+      <div class="grid-item ecommerce">
+        <img src="./assets/images/portfolio2.jpg" alt="imagem da home de um site">
+      </div>
+
+      <div class="grid-item oficina">
+        <img src="./assets/images/portfolio1.jpg" alt="imagem da home de um site">
+      </div>
+
+      <div class="grid-item estetica-automotiva">
+        <img src="./assets/images/portfolio2.jpg" alt="imagem da home de um site">
+      </div>
+
+      <div class="grid-item oficina">
+        <img src="./assets/images/portfolio1.jpg" alt="imagem da home de um site">
+      </div>
+
+      <div class="grid-item estetica-automotiva">
+        <img src="./assets/images/portfolio2.jpg" alt="imagem da home de um site">
+      </div>
+
     </div>
 
   </section>
@@ -283,7 +314,7 @@
       </svg>
     </div>
 
-    <div class="testimonyal-container"  data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+    <div class="testimonyal-container" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
 
       <div class="card">
 
@@ -525,8 +556,10 @@
   <script src="https://kit.fontawesome.com/d2e94242a3.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+  <script src="./isotope-docs/isotope.pkgd.min.js"></script>
   <script defer src="./assets/scripts/script.js"></script>
 </body>
 

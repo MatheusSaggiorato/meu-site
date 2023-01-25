@@ -108,15 +108,6 @@ $(document).ready(function(){
   });
 });
 
-
-
-
-
-
-
-
-
-
 $(document).ready(function(){
   $('.testimonyal-container').slick({
     dots: true,
@@ -147,4 +138,26 @@ $(document).ready(function(){
       // instead of a settings object
     ]
   });
+});
+
+
+//Isotope
+$(document).ready(function(){
+
+	var $grid = $('.grid').isotope({
+	  itemSelector: '.grid-item'
+	});
+
+	// filter items on button click
+	$('.filter-menu').on( 'click', 'button', function() {
+	  var filterValue = $(this).attr('data-filter');
+	  $grid.isotope({ filter: filterValue});
+	  return false;
+	});
+	
+	$(".filter-menu button").click(function() {
+        $(this).addClass("active");
+        $(this).siblings().removeClass("active");
+    });
+
 });
