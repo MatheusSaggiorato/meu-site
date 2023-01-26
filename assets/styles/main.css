@@ -42,7 +42,6 @@ body::-webkit-scrollbar-thumb {
 html {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-    scroll-padding-top: 50px;
 }
 
 body {

@@ -36,6 +36,15 @@
     gap: 1.25rem;
 }
 
+.title-contact {
+    font-size: var(--font-desktop-title);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: var(--margin-8);
+    margin-bottom: var(--margin-6);
+    color: var(--test-blue);
+}
+
 .links-contact {
     display: flex;
     align-items: center;
@@ -65,7 +74,7 @@
     color: var(--test-blue);
 }
 
-.input-group {
+.input-grouping {
     position: relative;
 }
 

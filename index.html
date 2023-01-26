@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./assets/images/logoSemNomeFundoAzul.webp">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.css?v=0.1">
@@ -26,7 +28,7 @@
       <ul id="menu" role="menu">
         <li><a class="links-menu" href="#sobre">Quem sou?</a></li>
         <li><a class="links-menu" href="#servicos">Serviços</a></li>
- <!--        <li><a id="btn-dropdown" href="#servicos">Serviços
+        <!--        <li><a id="btn-dropdown" href="#servicos">Serviços
             <span class="plus"></span></a>
           <ul id="sub-menu">
             <li><a class="links-menu" href="#">Desenvolvimento e manutenção de sites</a></li>
@@ -262,18 +264,18 @@
     <h1 class="title-portfolio">Portfólio</h1>
 
     <div class="filter-menu">
-			<button class="active" data-filter="*">All</button>
-			<button data-filter=".ecommerce">ecommerce</button>
-			<button data-filter=".landing-page">landing-page</button>
-			<button data-filter=".oficina">oficina</button>
-			<button data-filter=".estetica-automotiva">estetica-automotiva</button>
-			<button data-filter=".ecommerce:not(.landing-page)">ecommerce but not landing-page</button>
-		</div>
+      <button class="active" data-filter="*">Todos</button>
+      <button data-filter=".ecommerce">Ecommerce</button>
+      <button data-filter=".landing-page">Página de vendas</button>
+      <button data-filter=".oficina">Oficina mecânica</button>
+      <button data-filter=".estetica-automotiva">Estetica-automotiva</button>
+      <button data-filter=".landing-page">Página de captura</button>
+    </div>
 
     <div class="grid">
 
-      <div class="grid-item ecommerce">
-        <img src="./assets/images/portfolio2.jpg" alt="imagem da home de um site">
+      <div class="grid-item ecommerce" onclick="openModal('dv-modal')">
+        <img src="./assets/images/designer-web.png" alt="imagem da home de um site">
       </div>
 
       <div class="grid-item landing-page">
@@ -440,6 +442,8 @@
       </svg>
     </div>
 
+    <h1 class="title-contact">Informações para contato</h1>
+
     <div class="container-links-contact">
 
       <a class="links-contact" href="mailto:matheussaggiorato@gmail.com" target="_blank">
@@ -460,7 +464,7 @@
 
       <h1 class="title-contact">Deixe sua mensagem que entraremos em contato</h1>
 
-      <div class="input-group">
+      <div class="input-grouping">
         <form action="contatoenvia" method="post" class="form" autocomplete="off">
           <input type="hidden" name="resultado" value="7">
           <input type="text" name="nome" class="input" id="name" data-msg="Campo Obrigátorio" required="required"
@@ -469,19 +473,19 @@
         </form>
       </div>
 
-      <div class="input-group">
+      <div class="input-grouping">
         <input type="email" class="input" name="email" id="email" data-rule="email"
           data-msg="Campo obrigatório com e-mail válido" required="required" autocomplete="off">
         <label class="user-label">E-mail</label>
       </div>
 
-      <div class="input-group">
+      <div class="input-grouping">
         <input type="tel" class="input" name="fone" attrname="telephone1" id="subject" data-rule="minlen:4"
           data-msg="Campo obrigatório" required="required" autocomplete="off">
         <label class="user-label">Telefone</label>
       </div>
 
-      <div class="input-group">
+      <div class="input-grouping">
         <input type="text" class="input" name="mensagem" data-rule="required" data-msg="Campo obrigatório"
           required="required" autocomplete="off"></input>
         <label class="user-label">Mensagem</label>
@@ -560,6 +564,9 @@
     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
   <script src="./isotope-docs/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <script defer src="./assets/scripts/script.js"></script>
 </body>
 
