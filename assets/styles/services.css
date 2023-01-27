@@ -29,6 +29,7 @@
     letter-spacing: 2px;
     margin-top: var(--margin-8);
     margin-bottom: var(--margin-6);
+    text-align: center;
 }
 
 .service-name {
@@ -74,7 +75,7 @@
 
 .custom-shape-divider-bottom-1674431334 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;

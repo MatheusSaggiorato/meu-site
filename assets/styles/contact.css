@@ -154,7 +154,7 @@ input:valid~label {
 
 .custom-shape-divider-bottom-1674428492 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
