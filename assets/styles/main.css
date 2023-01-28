@@ -28,7 +28,7 @@
 }
 
 body::-webkit-scrollbar {
-    width: 12px;
+    width: .75rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -58,14 +58,14 @@ body, .body-cases {
     background: var(--dark-gradient);
     min-height: 500vh;
     width: 100%;
-    padding-top: 70px;
+    padding-top: 4.375rem;
 }
 
 .title-case {
     margin-bottom: var(--margin-10);
     font-size: 3rem;
     color: var(--light-theme);
-    letter-spacing: 2px;
+    letter-spacing: .125rem;
     font-weight: 700;
     text-align: center;
 }
@@ -91,7 +91,7 @@ body, .body-cases {
     margin-bottom: var(--margin-2);
     font-size: 3rem;
     color: var(--light-theme);
-    letter-spacing: 2px;
+    letter-spacing: .125rem;
     font-weight: 700;
 }
 

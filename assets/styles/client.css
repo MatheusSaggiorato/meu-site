@@ -31,7 +31,7 @@
 .title-clientes {
     font-size: var(--font-desktop-title);
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: .125rem;
     margin-top: var(--margin-8);
     margin-bottom: var(--margin-6);
     text-align: center;
@@ -55,7 +55,7 @@
 }
 
 .foto-cliente {
-    width: 90px;
+    width: 5.625rem;
     border-radius: 50%;
     z-index: 1000;
 }
@@ -65,7 +65,7 @@
     color: var(--test-blue);
     font-size: var(--font-desktop-subtitle);
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: .125rem;
 }
 
 .fa-quote-left,
@@ -88,7 +88,7 @@
     color: var(--test-blue);
     z-index: 1000;
     font-size: var(--font-body);
-    letter-spacing: 2px;
+    letter-spacing: .125rem;
     line-height: 1.5rem;
 }
 
@@ -96,7 +96,7 @@
     content: '';
     position: absolute;
     background: var(--light-theme);
-    inset: 4px;
+    inset: .25rem;
     border-radius: 1rem;
 }
 

@@ -6,12 +6,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	gap: 20px;
+	gap: 1.25rem;
 	
 }
 
 .logo-footer {
-	width: 90px;
+	width: 5.625rem;
 }
 
 .icon-social-midia {
@@ -37,7 +37,7 @@
 .termos-footer {
 	font-size: 0.75rem;
 	font-weight: 700;
-	letter-spacing: 1px;
+	letter-spacing: .0625rem;
 	text-align: center;
 }
 
@@ -80,11 +80,11 @@
 .tooltip {
 	position: absolute;
 	top: 0;
-	font-size: 14px;
+	font-size: 0.875rem;
 	background: #ffffff;
 	color: var(--light-theme);
-	padding: 5px 8px;
-	border-radius: 5px;
+	padding: .3125rem .5rem;
+	border-radius: .3125rem;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 	pointer-events: none;
 	transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -96,8 +96,8 @@
 .tooltip::before {
 	position: absolute;
 	content: "";
-	height: 8px;
-	width: 8px;
+	height: .5rem;
+	width: .5rem;
 	background: #ffffff;
 	bottom: -3px;
 	left: 50%;
@@ -106,7 +106,7 @@
 }
 
 .tip-box:hover .tooltip {
-	top: -45px;
+	top: -2.8125rem;
 	opacity: 1;
 	visibility: visible;
 	pointer-events: auto;
@@ -121,15 +121,15 @@
 .whatsapp-fixed {
     position: fixed;
     display: flex;
-    bottom: 55px;
-    height: 70px;
-    right: 15px;
+    bottom: 3.4375rem;
+    height: 4.375rem;
+    right: 0.9375rem;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
     transition: 250ms;
     border-radius: 50%;
-    width: 45px;
+    width: 2.8125rem;
     height: auto;
     z-index: 1000;
 }
@@ -153,10 +153,10 @@
 
 #backToTop {
     position: fixed;
-    bottom: 15px;
-    right: 22px;
-    width: 25px;
-    height: 25px;
+    bottom: 0.9375rem;
+    right: 1.375rem;
+    width: 1.5625rem;
+    height: 1.5625rem;
     border: none;
     border-radius: 50%;
     background-color: var(--first-blue);
@@ -177,13 +177,13 @@
 
 #backToTop .fa-angles-up {
     position: relative;
-    font-size: 13px;
+    font-size: .8125rem;
     color: var(--light-theme);
     transition: margin-bottom 250ms;
 }
 
 #backToTop:hover .fa-angles-up {
-    margin-bottom: 10px;
+    margin-bottom: .625rem;
 }
 
 #backToTop:hover {
