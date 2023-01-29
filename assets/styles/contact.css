@@ -121,7 +121,7 @@ input:valid~label {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    background: var(--second-blue);
+    background: var(--test-blue);
     color: var(--light-theme);
     letter-spacing: 2px;
     margin-bottom: var(--margin-6);

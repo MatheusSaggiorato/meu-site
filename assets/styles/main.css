@@ -50,20 +50,24 @@ body, .body-cases {
     color: var(--light-theme);
 }
 
+.sessions {
+    padding: 4rem 2rem;
+}
+
 .header-cases {
     background: var(--test-blue);
 }
 
 .main-container-cases {
     background: var(--dark-gradient);
-    min-height: 500vh;
     width: 100%;
     padding-top: 4.375rem;
 }
 
 .title-case {
-    margin-bottom: var(--margin-10);
-    font-size: 3rem;
+    margin-top: var(--margin-8);
+    margin-bottom: var(--margin-8);
+    font-size: 2.5rem;
     color: var(--light-theme);
     letter-spacing: .125rem;
     font-weight: 700;
@@ -89,7 +93,7 @@ body, .body-cases {
 
 .title-explication-cases {
     margin-bottom: var(--margin-2);
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--light-theme);
     letter-spacing: .125rem;
     font-weight: 700;
@@ -97,7 +101,8 @@ body, .body-cases {
 
 
 .card-case {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: auto;
     background: var(--light-theme);
     position: relative;
@@ -152,21 +157,42 @@ body, .body-cases {
 
 
 
-#back-button {
+#back-page-button {
         position: fixed;
-        top: 70px;
-        height: 70px;
-        right: 15px;
+        top: 4.06rem;
+        /* bottom: .9375rem; */
+        left: 0;
         text-decoration: none;
         text-align: center;
         cursor: pointer;
         transition: 250ms;
-        font-size: 1rem;
-        padding: .5rem;
+        font-size: 1.25rem;
+        padding: .4rem .5rem;
+        border: none;
+        border-radius: 0 5px 5px 0;
         height: auto;
         z-index: 1000;
+        color: var(--dark-theme);
+        background: var(--light-theme);
 }
 
-.sessions {
-    padding: 4rem 2rem;
+@media screen and (max-width: 770px) {
+    #back-page-button {
+        font-size: 1rem;
+        padding: .4rem .5rem;
+}
+}
+
+@media screen and (max-width: 600px){
+    .explication-case-container {
+        padding: 4rem 2rem;
+    }
+    
+.content-cases-container {
+    width: 100%;
+}
+
+.title-case, .title-explication-cases  {
+    font-size: var(--font-mobile-title);
+}
 }
