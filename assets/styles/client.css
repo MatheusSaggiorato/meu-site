@@ -59,6 +59,16 @@
     border-radius: 50%;
     z-index: 1000;
 }
+  
+.rating-card {
+    display: flex;
+    gap: 1rem;
+}
+
+.star {
+    color: #FCD116;
+    font-size: 1.5rem
+}
 
 .card h2 {
     z-index: 1000;
@@ -92,39 +102,8 @@
     line-height: 1.5rem;
 }
 
-.card::after {
-    content: '';
-    position: absolute;
-    background: var(--light-theme);
-    inset: .25rem;
-    border-radius: 1rem;
-}
-
-.card::before {
-    content: '';
-    position: absolute;
-    width: 10rem;
-    height: 130%;
-    transition: all 1s linear;
-}
-
 .card:hover {
     transform: scale(0.98);
-}
-
-.card:hover::before {
-    background: var(--cta-color);
-    animation: border-rotate 6s linear infinite;
-}
-
-@keyframes border-rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

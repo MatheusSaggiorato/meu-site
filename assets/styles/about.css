@@ -25,7 +25,7 @@
     right: 0;
     top: 0;
     border-radius: 50%;
-    border-top: 8px solid var(--cta-color);
+    border-top: 8px solid var(--first-blue);
     border-bottom: 8px solid var(--test-blue);
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;

@@ -24,6 +24,7 @@
 .filter-menu button {
     padding: 1rem;
     font-size: var(--font-body);
+    letter-spacing: 1px;
     background-color: var(--third-blue);
     color: var(--light-theme);
     border-radius: 1rem;

@@ -103,8 +103,17 @@
                             alt="foto de cliente">
 
                         <h2>Fulano da Silva</h2>
+                        
+                        <div class="rating-card">
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </div>
 
-                        <p class="testimony-case"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is
+                        <p class="testimony-case"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum
+                            is
                             simply dummy
                             text
                             of the printing and typesetting
@@ -167,7 +176,8 @@
 
     <div class="buttons-fixed">
 
-        <button id="back-page-button" onclick="returnToPage()">Voltar para o site</button>
+        <button id="back-page-button" onclick="returnToPage()"><i class="fa-solid fa-chevron-left"></i>Voltar para o
+            site</button>
 
         <a href="https://api.whatsapp.com/send?phone=5554999748017&text=Texto%20aqui" target="_blank">
             <img loading="lazy" class="whatsapp-fixed" src="../assets/images/whatsapp-logo-color.webp"
@@ -177,11 +187,11 @@
         <button onclick="BackToTopFunction()" id="backToTop"><i class="fa-solid fa-angles-up"></i></button>
     </div>
 
-    <script async src="https://kit.fontawesome.com/d2e94242a3.js" crossorigin="anonymous"></script>
-    <script async src="../assets/scripts/script.js"></script>
+    <script defer src="https://kit.fontawesome.com/d2e94242a3.js" crossorigin="anonymous"></script>
+    <script defer src="../assets/scripts/script.js"></script>
     <script>
-    
-        function returnToPage(){
+
+        function returnToPage() {
             window.close();
         };
     </script>

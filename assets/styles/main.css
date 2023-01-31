@@ -11,19 +11,19 @@
 
 @font-face {
     font-family: Roboto;
-    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Medium.woff);
+    src: local(Roboto), url(../font-roboto/woof/Roboto-Medium.woff);
     font-weight: 500;
 }
 
 @font-face {
     font-family: Roboto;
-    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Bold.woff);
+    src: local(Roboto), url(../font-roboto/woof/Roboto-Bold.woff);
     font-weight: 700;
 }
 
 @font-face {
     font-family: Roboto;
-    src: local(Roboto), url(./assets/font-roboto/woof/Roboto-Black.woff);
+    src: local(Roboto), url(../font-roboto/woof/Roboto-Black.woff);
     font-weight: 900;
 }
 
@@ -167,13 +167,31 @@ body, .body-cases {
         cursor: pointer;
         transition: 250ms;
         font-size: 1.25rem;
+        font-weight: 700;
         padding: .4rem .5rem;
         border: none;
         border-radius: 0 5px 5px 0;
         height: auto;
         z-index: 1000;
-        color: var(--dark-theme);
-        background: var(--light-theme);
+        color: var(--light-theme);
+        background: transparent;
+        text-transform: uppercase;
+        background: var(--first-blue);
+        transition: 250ms all;
+}
+
+#back-page-button:hover {
+    background: var(--second-blue);
+}
+
+#back-page-button .fa-chevron-left {
+    margin-right: .5rem;
+    color: var(--light-theme);
+    font-size: 1rem;
+    transition: 250ms all;
+}
+#back-page-button:hover .fa-chevron-left {
+    transform: translateX(-5px);
 }
 
 @media screen and (max-width: 770px) {
