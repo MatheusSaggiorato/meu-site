@@ -73,7 +73,7 @@
 .card h2 {
     z-index: 1000;
     color: var(--test-blue);
-    font-size: var(--font-desktop-subtitle);
+    font-size: var(--font-subtitle);
     text-align: center;
     letter-spacing: .125rem;
 }

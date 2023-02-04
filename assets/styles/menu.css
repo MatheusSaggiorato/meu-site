@@ -109,11 +109,11 @@ background: var(--test-blue);
 	}
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
 
 	#menu {
 		position: absolute;
-		width: auto;
+		width: 50%;
 		top: 3.7rem;
 		z-index: 1000;
 		right: 0;
@@ -141,7 +141,7 @@ background: var(--test-blue);
 	}
  */
 	#nav.active #menu {
-		height: 100vh;
+		height: auto;
 		border-radius: 5px;
 		visibility: visible;
 		overflow-y: auto;
@@ -150,7 +150,7 @@ background: var(--test-blue);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		max-height: 100vh;
+		max-height: 300px;
 		max-width: 80%;
 		transition: max-height .5s;
 	}

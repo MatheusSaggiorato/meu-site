@@ -23,6 +23,14 @@
     fill: var(--light-theme);
 }
 
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
 .title-services {
     font-size: var(--font-desktop-title);
     font-weight: 700;
@@ -34,7 +42,7 @@
 
 .service-name {
     color: var(--test-blue);
-    font-size: var(--font-desktop-subtitle);
+    font-size: var(--font-subtitle);
     text-align: center;
     font-weight: 800;
 }
@@ -42,35 +50,66 @@
 .service-description {
     color: var(--test-blue);
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
     font-size: var(--font-body);
 }
 
+.service-name, .service-description {
+    margin: 1rem;
+}
+
 .service-image {
-    width: 120px;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
     height: auto;
+    image-rendering:optimizeQuality;
 }
 
 .service-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 2rem;
     background: var(--light-theme);
-    padding: 1rem;
     border-radius: 1rem;
-    margin: 1rem;
+    min-height: 450px;
+    transition: transform 250ms;
+    overflow: hidden;
 }
 
 .service-box:hover {
     box-shadow: 8px 8px 7px var(--dark-blue);
-    transform: scale(.98);
+    transform: translateY(-10px);
 }
 
-.responsive {
-    margin: auto;
-    border-radius: 1rem;
+@media screen and (min-width: 1501px){
+    .service-box {
+        max-width: 30%;
+    }
+}
+
+@media screen and (min-width: 840px) and (max-width: 1500px) {
+    .service-box {
+        max-width: 48%;
+    }
+}
+
+@media screen and (max-width: 839px) {
+    .service-box {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .service-name {
+        font-size: var(--font-subtitle);
+    }
+    
+    .service-description {
+        font-size: var(--font-body);
+    }    
 }
 
 .custom-shape-divider-bottom-1674431334 {

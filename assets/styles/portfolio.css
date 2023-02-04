@@ -40,10 +40,10 @@
 .grid-item {
     width: 30%;
     text-align: center;
-    margin: 1rem;
     background: var(--second-blue);
     padding: .5rem;
     border-radius: 1rem;
+    margin: 0 1rem 1rem 0;
 }
 
 .grid-item:hover {

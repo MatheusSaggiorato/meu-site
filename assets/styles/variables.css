@@ -1,10 +1,9 @@
 :root {
 	--font-desktop-title: 2.125rem;
-	--font-desktop-subtitle: 1.5rem;
-
+	
 	--font-mobile-title: 2rem;
-	--font-mobile-subtitle: 1.5rem;
-
+	
+	--font-subtitle: 1.5rem;
 	--font-body: 1.25rem;
 	--font-caption: .75rem;
 

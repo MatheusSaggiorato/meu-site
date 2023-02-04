@@ -51,7 +51,7 @@ body, .body-cases {
 }
 
 .sessions {
-    padding: 4rem 2rem;
+    padding: 4rem 1.25rem;
 }
 
 .header-cases {
@@ -126,7 +126,7 @@ body, .body-cases {
 .card-case h2 {
     z-index: 1000;
     color: var(--test-blue);
-    font-size: var(--font-desktop-subtitle);
+    font-size: var(--font-subtitle);
     text-align: center;
     letter-spacing: 2px;
 }
