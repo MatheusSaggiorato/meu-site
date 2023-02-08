@@ -27,26 +27,19 @@ itemsMenu.forEach(function (event) {
 
 //start typeitjs.com
 document.addEventListener("DOMContentLoaded", function () {
-  new TypeIt("#element", {
-    strings: ["This is my string!"],
+  new TypeIt('#type-it', {
+    strings: ['Responsivo a todos os tamanhos de telas;', 'Otimizado para carregar rapidamente;', 'Com layout exclusivo;', 'Já integrado com as ferramentas de marketing necessárias;',
+      'Focado em aumentar suas vendas e resultados;', 'Com suporte e atendimento humanizado;'],
+    breakLines: false,
+    loop: true,
+    speed: 30,
+    lifeLike: false,
+    nextStringDelay: [3000, 500],
+    loopDelay: [3000, 500],
+    startDelay: 250
   }).go();
 });
-
-new TypeIt('#type-it', {
-/*   strings: ['80% da população pesquisa produtos e serviços na Internet', 'Sua empresa se torna mais acessível aos clientes em potencial',
-   'estabelece confiança e credibilidade com os clientes', 'pdoe se tornar uma poderosa ferramenta de marketing', 'ajuda a economizar tempo e recursos',
-  'fornece informações importantes aos clientes'], */
-  strings: ["Responsivo a todos os tamanhos de tela;", 'Otimizado para carregar rapidamente;', 'Com layout exclusivo;', 'Já integrado com as ferramentas necessárias;',
-  'Focado em aumentar suas vendas e resultados;'],
-  breakLines: false,
-  loop: true,
-  speed: 30,
-  lifeLike: false,
-  nextStringDelay: [3000, 3000],
-  loopDelay: [3000, 3000]
-}).go();
 //end typeitjs
-
 
 window.onscroll = function () {
 
@@ -75,7 +68,7 @@ function BackToTopFunction() {
 
 
 //Carousel
-$(document).ready(function(){
+$(document).ready(function () {
   $('.testimonyal-container').slick({
     dots: true,
     infinite: true,
@@ -109,22 +102,22 @@ $(document).ready(function(){
 
 
 //Isotope
-$(document).ready(function(){
+$(document).ready(function () {
 
-	var $grid = $('.grid').isotope({
-	  itemSelector: '.grid-item'
-	});
+  var $grid = $('.grid').isotope({
+    itemSelector: '.grid-item'
+  });
 
-	// filter items on button click
-	$('.filter-menu').on( 'click', 'button', function() {
-	  var filterValue = $(this).attr('data-filter');
-	  $grid.isotope({ filter: filterValue});
-	  return false;
-	});
-	
-	$(".filter-menu button").click(function() {
-        $(this).addClass("active");
-        $(this).siblings().removeClass("active");
-    });
+  // filter items on button click
+  $('.filter-menu').on('click', 'button', function () {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+    return false;
+  });
+
+  $(".filter-menu button").click(function () {
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+  });
 
 });

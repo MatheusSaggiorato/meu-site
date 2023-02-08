@@ -130,7 +130,7 @@
 
 
 	.top-container {
-		background: var(--test-blue) url(../images/bg-tech-mobile.png) center center/cover no-repeat fixed;
+		background: var(--test-blue) url(../images/bg-tech-mobile.png) bottom right/cover no-repeat fixed;
 		padding: 4.375rem 1.875rem;
 	}
 
