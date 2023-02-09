@@ -128,8 +128,8 @@
     text-align: center;
     cursor: pointer;
     transition: 250ms;
-    border-radius: 50%;
     width: 2.8125rem;
+	border-radius: 50%;
     height: auto;
     z-index: 1000;
 }
