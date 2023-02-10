@@ -29,7 +29,7 @@
 }
 
 .title-clientes {
-    font-size: var(--font-desktop-title);
+    font-size: var(--title-sessions);
     font-weight: 700;
     letter-spacing: .125rem;
     margin-top: var(--margin-8);

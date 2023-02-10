@@ -37,7 +37,7 @@
 }
 
 .title-contact {
-    font-size: var(--font-desktop-title);
+    font-size: var(--title-sessions);
     font-weight: 700;
     letter-spacing: 2px;
     margin-top: var(--margin-8);
@@ -63,16 +63,32 @@
     font-size: 2.5rem;
     margin-right: .625rem;
     color: var(--test-blue);
-
 }
 
-.title-contact {
-    margin-bottom: var(--margin-5);
-    font-size: var(--font-desktop-title);
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: var(--test-blue);
+.links-contact:hover .whatsapp-contact,
+.links-contact:hover .location-contact,
+.links-contact:hover .envelope-contact{
+    animation: shake 1s;
 }
+
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate(-5px, -2px);
+    }
+    
+    20%, 80% {
+      transform: translate(5px, -3px);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate(-3px, -4px);
+    }
+  
+    40%, 60% {
+      transform: translate(3px, 0);
+    }
+  }
 
 .input-grouping {
     position: relative;
@@ -128,7 +144,7 @@ input:valid~label {
     margin-bottom: var(--margin-6);
 }
 
-.form-button:active {
+.form-button:hover {
     transform: scale(0.95);
     -ms-transform: scale(0.95);
     /* IE 9 */

@@ -7,7 +7,7 @@
     color: var(--test-blue);
     margin-top: var(--margin-8);
     margin-bottom: var(--margin-6);
-    font-size: var(--font-desktop-title);
+    font-size: var(--title-sessions);
     font-weight: 700;
     letter-spacing: 2px;
     text-align: center;
