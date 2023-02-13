@@ -126,23 +126,12 @@
     color: #850AFA;
 }
 
-.google-color,
-.google-white,
-.figma-color,
-.figma-white {
-    height: 3.3rem;
+.tip-box:hover .fa-google {
+    color: #5495E4;
 }
 
-.figma-color,
-.google-color,
-.tip-box:hover .figma-white,
-.tip-box:hover .google-white {
-    display: none;
-}
-
-.tip-box:hover .google-color,
-.tip-box:hover .figma-color {
-    display: block;
+.tip-box:hover .fa-figma {
+    color: #9A54F2;
 }
 
 @media screen and (max-width: 993px) {

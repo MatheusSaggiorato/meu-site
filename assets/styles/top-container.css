@@ -1,7 +1,7 @@
 .top-container {
 	min-height: 110vh;
 	height: auto;
-	background: var(--test-blue) url(../images/bg-tech.png) bottom right/cover no-repeat fixed;
+	background: var(--test-blue) url(../images/bg-tech.webp) bottom right/cover no-repeat fixed;
 	padding: 4rem 20rem 4rem 2rem;
 	position: relative;
 }
@@ -130,7 +130,7 @@
 
 
 	.top-container {
-		background: var(--test-blue) url(../images/bg-tech-mobile.png) bottom right/cover no-repeat fixed;
+		background: var(--test-blue) url(../images/bg-tech-mobile.webp) bottom right/cover no-repeat fixed;
 		padding: 4.375rem 1.875rem;
 	}
 

@@ -12,7 +12,8 @@ header {
 }
 
 .logo {
-	height: 50px;
+	height: 55px;
+	border-radius: .5rem;
 }
 
 .header-on-scroll {
