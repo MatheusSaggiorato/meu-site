@@ -4,7 +4,7 @@
 }
 
 .title-portfolio {
-    color: var(--test-blue);
+    color: var(--main-blue);
     margin-top: var(--margin-8);
     margin-bottom: var(--margin-6);
     font-size: var(--title-sessions);
@@ -34,7 +34,7 @@
 
 .filter-menu button.active,
 .filter-menu button:hover {
-    background-color: var(--test-blue);
+    background-color: var(--main-blue);
 }
 
 .grid-item {

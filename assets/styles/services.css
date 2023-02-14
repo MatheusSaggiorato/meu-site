@@ -1,6 +1,6 @@
 #servicos {
     position: relative;
-    background: var(--test-blue);
+    background: var(--main-blue);
     padding-bottom: 8rem;
 }
 
@@ -42,14 +42,14 @@
 }
 
 .service-name {
-    color: var(--test-blue);
+    color: var(--main-blue);
     font-size: var(--font-subtitle);
     text-align: center;
     font-weight: 800;
 }
 
 .service-description {
-    color: var(--test-blue);
+    color: var(--main-blue);
     text-align: center;
     letter-spacing: 2px;
     line-height: 1.5rem;

@@ -20,7 +20,7 @@
 }
 
 .custom-shape-divider-top-1674270001 .shape-fill {
-    fill: var(--test-blue);
+    fill: var(--main-blue);
 }
 
 .form-container {
@@ -42,13 +42,13 @@
     letter-spacing: 2px;
     margin-top: var(--margin-8);
     margin-bottom: var(--margin-6);
-    color: var(--test-blue);
+    color: var(--main-blue);
 }
 
 .links-contact {
     display: flex;
     align-items: center;
-    color: var(--test-blue);
+    color: var(--main-blue);
     text-decoration: none;
     font-size: var(--font-body);
 }
@@ -62,7 +62,7 @@
 .envelope-contact {
     font-size: 2.5rem;
     margin-right: .625rem;
-    color: var(--test-blue);
+    color: var(--main-blue);
 }
 
 .links-contact:hover .whatsapp-contact,
@@ -96,20 +96,20 @@
 
 .input {
     width: 100%;
-    border: solid 1.5px var(--test-blue);
+    border: solid 1.5px var(--main-blue);
     border-radius: 1rem;
     background: none;
     padding: 1rem;
     margin-bottom: 1rem;
     font-size: 1rem;
-    color: var(--test-blue);
+    color: var(--main-blue);
     transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-label {
     position: absolute;
     left: 1rem;
-    color: var(--test-blue);
+    color: var(--main-blue);
     pointer-events: none;
     transform: translateY(1rem);
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -118,7 +118,7 @@
 .input:focus,
 input:valid {
     outline: none;
-    border: 1.5px solid var(--first-blue);
+    border: 1.5px solid var(--cta-color);
 }
 
 .input:focus~label,
@@ -126,7 +126,7 @@ input:valid~label {
     transform: translateY(-50%) scale(0.9);
     background: var(--light-theme);
     padding: 0 .3rem;
-    color: var(--first-blue);
+    color: var(--cta-color);
 }
 
 .form-button {
@@ -187,7 +187,7 @@ input:valid~label {
 }
 
 .custom-shape-divider-bottom-1674428492 .shape-fill {
-    fill: var(--test-blue);
+    fill: var(--main-blue);
 }
 
 /** For tablet devices **/

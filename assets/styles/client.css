@@ -1,5 +1,5 @@
 #clientes {
-    background: var(--test-blue);
+    background: var(--main-blue);
     position: relative;
 }
 
@@ -62,6 +62,7 @@
   
 .rating-card {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -72,7 +73,7 @@
 
 .card h2 {
     z-index: 1000;
-    color: var(--test-blue);
+    color: var(--main-blue);
     font-size: var(--font-subtitle);
     text-align: center;
     letter-spacing: .125rem;
@@ -80,7 +81,7 @@
 
 .fa-quote-left,
 .fa-quote-right {
-    color: var(--test-blue);
+    color: var(--main-blue);
     z-index: 1000;
     font-size: 2rem;
 }
@@ -95,7 +96,7 @@
 }
 
 .testimony {
-    color: var(--test-blue);
+    color: var(--main-blue);
     z-index: 1000;
     font-size: var(--font-body);
     letter-spacing: .125rem;

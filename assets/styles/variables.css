@@ -21,7 +21,7 @@
 	--margin-10: 5rem;
 
 
-	--test-blue: #1F3B74;
+	--main-blue: #1F3B74;
 	--dark-blue: #00061E;/* cor da logo */
 	--first-blue: #162C40;
 	--second-blue: #2675A6;
@@ -36,10 +36,4 @@
 	--ti-cursor-transform: translateX(.1rem);
 	--dark-gradient: linear-gradient(90deg, rgba(21, 21, 21, 1) 0%, rgba(27, 27, 27, 1) 9%, rgba(34, 34, 34, 1) 29%, rgba(39, 39, 39, 1) 40%, rgba(37, 37, 37, 1) 48%, rgba(48, 48, 48, 1) 68%, rgba(64, 64, 64, 1) 100%);
 	--blue-gradient: linear-gradient(148deg, rgba(38, 117, 166, 1) 0%, rgba(43, 73, 138, 1) 50%, rgba(44, 68, 135, 1) 100%);
-}
-
-.glass-effect {
-	background-color: #ffffff10;
-	backdrop-filter: blur(12px);
-	-webkit-backdrop-filter: blur(12px);
 }

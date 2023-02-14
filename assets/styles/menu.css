@@ -17,7 +17,7 @@ header {
 }
 
 .header-on-scroll {
-background: var(--test-blue);
+background: var(--main-blue);
 }
 
 #btn-mobile {
@@ -111,6 +111,10 @@ background: var(--test-blue);
 }
 
 @media screen and (max-width: 800px) {
+
+	.logo {
+		height: 44px;
+	}
 
 	#menu {
 		position: absolute;

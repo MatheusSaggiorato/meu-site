@@ -18,7 +18,19 @@
   <link rel="icon" href="./assets/images/logo-sem-nome-sem-fundo.webp">
   <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css" />
+
+  <link rel="stylesheet" type="text/css" href="./assets/styles/reset.css?v=0.1">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/variables.css?v=0.1">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/menu.css?v=0.1">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/top-container.css?v=0.1">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/about.css?v=0.1">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/services.css?v=0.1">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/portfolio.css?v=0.1">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/client.css?v=0.1">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/contact.css?v=0.1">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/footer.css?v=0.1">
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.css?v=0.1">
+
   <title>Matheus Saggiorato Web Developer</title>
 </head>
 
@@ -287,7 +299,7 @@
 
     <div class="grid">
 
-      <a href="./portfolio/top.car.html" target="_blank">
+      <a href="./portfolio/top-car.html" target="_blank">
         <div class="grid-item automotivo">
           <img loading="lazy" src="./assets/images/portfolio-Mecânica-Top-Car.webp" alt="imagem da home de um site">
         </div>
@@ -479,35 +491,39 @@
 
       <h1 class="title-contact">Deixe sua mensagem que entraremos em contato</h1>
 
-      <div class="input-grouping">
-        <form action="contatoenvia" method="post" class="form" autocomplete="off">
-          <input type="hidden" name="resultado" value="7">
-          <input type="text" name="nome" class="input" id="name" data-msg="Campo Obrigátorio" required="required"
+      <form action="https://formsubmit.co/matheussaggiorato@gmail.com" method="POST" class="form" autocomplete="off">
+
+        <div class="input-grouping">
+          <input type="text" name="name" class="input" id="name" data-msg="Campo Obrigátorio" required="required"
             autocomplete="off">
           <label class="user-label">Nome</label>
-        </form>
-      </div>
+        </div>
 
-      <div class="input-grouping">
-        <input type="email" class="input" name="email" id="email" data-rule="email"
-          data-msg="Campo obrigatório com e-mail válido" required="required" autocomplete="off">
-        <label class="user-label">E-mail</label>
-      </div>
+        <div class="input-grouping">
+          <input type="email" class="input" name="email" id="email" data-rule="email"
+            data-msg="Campo obrigatório com e-mail válido" required="required" autocomplete="off">
+          <label class="user-label">E-mail</label>
+        </div>
 
-      <div class="input-grouping">
-        <input type="tel" class="input" name="fone" attrname="telephone1" id="subject" data-rule="minlen:4"
-          data-msg="Campo obrigatório" required="required" autocomplete="off">
-        <label class="user-label">Telefone</label>
-      </div>
+        <div class="input-grouping">
+          <input type="tel" class="input" name="tel" attrname="telephone1" id="subject" data-rule="minlen:4"
+            data-msg="Campo obrigatório" required="required" autocomplete="off">
+          <label class="user-label">Telefone</label>
+        </div>
 
-      <div class="input-grouping">
-        <input type="text" class="input" name="mensagem" data-rule="required" data-msg="Campo obrigatório"
-          required="required" autocomplete="off"></input>
-        <label class="user-label">Mensagem</label>
-      </div>
+        <div class="input-grouping">
+          <input type="text" class="input" name="text" data-rule="required" data-msg="Campo obrigatório"
+            required="required" autocomplete="off"></input>
+          <label class="user-label">Mensagem</label>
+        </div>
 
-      <button class="form-button">Enviar</button>
+        <button type="submit" class="form-button">Enviar</button>
 
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you-page.html">
+
+      </form>
     </div>
 
 
@@ -556,10 +572,10 @@
 
     <div class="copy-footer-container">
       <p class="copy-footer">&#169; Copyright 2022 Matheus Saggiorato Web Developer</p>
-      <div>
-        <a class="termos-footer" href="#">termos de uso</a>
-        <a class="termos-footer" href="#">Política de privacidade</a>
-      </div>
+
+      <a class="termos-footer" href="#">termos de uso</a>
+      <a class="termos-footer" href="#">Política de privacidade</a>
+
     </div>
 
   </footer>
