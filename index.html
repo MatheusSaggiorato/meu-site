@@ -23,15 +23,15 @@
   <link async rel="stylesheet" type="text/css" href="./assets/styles/reset.css?v=0.1">
   <link async rel="stylesheet" type="text/css" href="./assets/styles/variables.css?v=0.1">
   <link async rel="stylesheet" type="text/css" href="./assets/styles/menu.css?v=0.1">
-  <link defer rel="stylesheet" type="text/css" href="./assets/styles/about.css?v=0.1">
-  <link defer rel="stylesheet" type="text/css" href="./assets/styles/services.css?v=0.1">
-  <link defer rel="stylesheet" type="text/css" href="./assets/styles/portfolio.css?v=0.1">
-  <link defer rel="stylesheet" type="text/css" href="./assets/styles/contact.css?v=0.1">
-  <link defer rel="stylesheet" type="text/css" href="./assets/styles/footer.css?v=0.1">
+  <link async rel="stylesheet" type="text/css" href="./assets/styles/about.css?v=0.1">
+  <link async rel="stylesheet" type="text/css" href="./assets/styles/services.css?v=0.1">
+  <link async rel="stylesheet" type="text/css" href="./assets/styles/portfolio.css?v=0.1">
+  <link async rel="stylesheet" type="text/css" href="./assets/styles/contact.css?v=0.1">
+  <link async rel="stylesheet" type="text/css" href="./assets/styles/footer.css?v=0.1">
   <link async rel="stylesheet" type="text/css" href="./assets/styles/main.css?v=0.1">
-  <link defer rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css" />
-  <link defer rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css" />
-  <link defer rel="stylesheet" type="text/css" href="./assets/styles/client.css?v=0.1">
+  <link async rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css" />
+  <link async rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css" />
+  <link async rel="stylesheet" type="text/css" href="./assets/styles/client.css?v=0.1">
 
   <title>Matheus Saggiorato Web Developer</title>
 </head>
@@ -525,11 +525,11 @@
           <label for="message" class="user-label">Mensagem</label>
         </div>
 
-        <button type="submit" class="form-button">Enviar</button>
+        <button type="submit" class="form-button" aria-label="enviar mensagem">Enviar</button>
 
-        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_captcha" value="false" for="recaptcha">
 
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you-page.html">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you-page.html" for="link da página de agradecimento">
 
       </form>
     </div>
@@ -592,7 +592,7 @@
   <div class="buttons-fixed">
 
     <a href="https://api.whatsapp.com/send?phone=5554999748017&text=Ol%C3%A1%20Matheus,%20vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os!"
-      target="_blank">
+      target="_blank" aria-label="botão de contato pelo whatsapp">
       <img loading="lazy" class="whatsapp-fixed" src="./assets/images/logo-whatsapp.svg" alt="logo do whatsapp">
     </a>
 
