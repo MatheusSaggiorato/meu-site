@@ -1,19 +1,25 @@
 @font-face {
     font-family: Roboto;
-    src: local(Roboto), url(../font-roboto/woof/Roboto-Medium.woff);
+    src: local(Roboto), url(../font-roboto/woof/Roboto-Medium.woff) format('woff');
     font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Roboto;
-    src: local(Roboto), url(../font-roboto/woof/Roboto-Bold.woff);
+    src: local(Roboto), url(../font-roboto/woof/Roboto-Bold.woff) format('woff');
     font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Roboto;
-    src: local(Roboto), url(../font-roboto/woof/Roboto-Black.woff);
+    src: local(Roboto), url(../font-roboto/woof/Roboto-Black.woff) format('woff');
     font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 body::-webkit-scrollbar {
