@@ -8,7 +8,7 @@
   <meta name="description"
     content="portfólio e serviços de desenvolvedor web, programador web, web designer, programador JavaScript e React">
   <!-- Google Tag Manager -->
- <!-- <script>(function (w, d, s, l, i) {
+  <!-- <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
         'gtm.start':
           new Date().getTime(), event: 'gtm.js'
@@ -16,34 +16,28 @@
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-MLKBD5B');</script> 
-  <!-- End Google Tag Manager -->
-  <link rel="icon" href="./assets/images/logo-sem-nome-sem-fundo.webp">
+  End Google Tag Manager -->
+  <link rel="icon" href="./assets/images/logo-fundo-azul-sem-nome.svg">
 
   <link async rel="stylesheet" type="text/css" href="./assets/styles/top-container.css?v=0.1">
   <link async rel="stylesheet" type="text/css" href="./assets/styles/reset.css?v=0.1">
   <link async rel="stylesheet" type="text/css" href="./assets/styles/variables.css?v=0.1">
   <link async rel="stylesheet" type="text/css" href="./assets/styles/menu.css?v=0.1">
-<<<<<<< HEAD
   <link async rel="stylesheet" type="text/css" href="./assets/styles/main.css?v=0.1">
   <link defer rel="stylesheet" type="text/css" href="./assets/styles/about.css?v=0.1">
   <link defer rel="stylesheet" type="text/css" href="./assets/styles/services.css?v=0.1">
   <link defer rel="stylesheet" type="text/css" href="./assets/styles/portfolio.css?v=0.1">
   <link defer rel="stylesheet" type="text/css" href="./assets/styles/contact.css?v=0.1">
   <link defer rel="stylesheet" type="text/css" href="./assets/styles/footer.css?v=0.1">
-  <link defer rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css" />
-  <link defer rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css" />
   <link defer rel="stylesheet" type="text/css" href="./assets/styles/client.css?v=0.1">
-=======
   <link async rel="stylesheet" type="text/css" href="./assets/styles/about.css?v=0.1">
   <link async rel="stylesheet" type="text/css" href="./assets/styles/services.css?v=0.1">
   <link async rel="stylesheet" type="text/css" href="./assets/styles/portfolio.css?v=0.1">
   <link async rel="stylesheet" type="text/css" href="./assets/styles/contact.css?v=0.1">
   <link async rel="stylesheet" type="text/css" href="./assets/styles/footer.css?v=0.1">
   <link async rel="stylesheet" type="text/css" href="./assets/styles/main.css?v=0.1">
-  <link async rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css" />
-  <link async rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css" />
-  <link async rel="stylesheet" type="text/css" href="./assets/styles/client.css?v=0.1">
->>>>>>> 7f401d9e1179e80ef46dfd09ec291a7205dd0aff
+  <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/client.css?v=0.1">
 
   <title>Matheus Saggiorato Web Developer</title>
 </head>
@@ -93,7 +87,8 @@
     <h2 class="subtitle-top">Se destaque dos seus concorrentes e venda mais com um posicionamento online eficiente.
       </h3>
 
-      <a href="https://api.whatsapp.com/send?phone=5554999748017&text=Ol%C3%A1%20Matheus,%20vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os!" target="_blank"><button class="btn-whats-top">Quero ter meu site</button></a>
+      <a href="https://api.whatsapp.com/send?phone=5554999748017&text=Ol%C3%A1%20Matheus,%20vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os!"
+        target="_blank"><button class="btn-whats-top">Quero ter meu site</button></a>
 
       <h3 class="type-it-title">O seu site:</h3>
 
@@ -110,8 +105,11 @@
   <section id="sobre" class="sessions">
 
     <div class="image-container-circle">
-      <img loading="lazy" class="my-image" src="./assets/images/my-image-site.webp"
+      <img loading="lazy" class="my-image" src="./assets/images/my-image-site.svg"
         alt="imagem de Matheus Saggiorato"></img>
+
+    <!--   <img loading="lazy" class="my-image" src="./assets/images/my-image-site.webp"
+        alt="imagem de Matheus Saggiorato"></img> -->
     </div>
 
     <h1 class="title-about">Olá. <br> Eu sou o Matheus Saggiorato!</h1>
@@ -355,129 +353,133 @@
 
   <section id="clientes" class="sessions">
 
-    <h1 class="title-clientes">Nossos clientes</h1>
-
     <div class="custom-shape-divider-top-1674275839">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
       </svg>
     </div>
 
-    <swiper-container class="testimonyal-container mySwiper" pagination="true" pagination-clickable="true" space-between="30"
-    slides-per-view="3">
+    <h1 class="title-clientes">Nossos clientes</h1>
 
-      <swiper-slide class="card">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
 
-        <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
+        <div class="card swiper-slide">
 
-        <h2>Fulano da Silva</h2>
+          <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
 
-        <div class="rating-card">
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
+          <h2>Fulano da Silva</h2>
+
+          <div class="rating-card">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+          </div>
+
+          <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
+            text
+            of the printing and typesetting
+            industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
+              class="fa-solid fa-quote-right"></i></p>
+
         </div>
 
-        <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
-          text
-          of the printing and typesetting
-          industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
-            class="fa-solid fa-quote-right"></i></p>
+        <div class="card swiper-slide">
 
-      </swiper-slide>
+          <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
 
-      <swiper-slide class="card">
+          <h2>Ciclano da Silva</h2>
 
-        <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
+          <div class="rating-card">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star-half-stroke star"></i>
+          </div>
 
-        <h2>Ciclano da Silva</h2>
+          <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
+            text
+            of the printing and typesetting
+            industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
+              class="fa-solid fa-quote-right"></i></p>
 
-        <div class="rating-card">
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star-half-stroke star"></i>
         </div>
 
-        <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
-          text
-          of the printing and typesetting
-          industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
-            class="fa-solid fa-quote-right"></i></p>
+        <div class="card swiper-slide">
 
-      </swiper-slide>
+          <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
 
-      <swiper-slide class="card">
+          <h2>Beltrano da Silva</h2>
 
-        <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
+          <div class="rating-card">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+          </div>
 
-        <h2>Beltrano da Silva</h2>
+          <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
+            text
+            of the printing and typesetting
+            industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
+              class="fa-solid fa-quote-right"></i></p>
 
-        <div class="rating-card">
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-regular fa-star star"></i>
-          <i class="fa-regular fa-star star"></i>
         </div>
 
-        <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
-          text
-          of the printing and typesetting
-          industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
-            class="fa-solid fa-quote-right"></i></p>
+        <div class="card swiper-slide">
 
-      </swiper-slide>
+          <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
 
-      <swiper-slide class="card">
+          <h2>Jorge da Silva</h2>
 
-        <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
+          <div class="rating-card">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star-half-stroke star"></i>
+          </div>
 
-        <h2>Jorge da Silva</h2>
+          <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
+            text
+            of the printing and typesetting
+            industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
+              class="fa-solid fa-quote-right"></i></p>
 
-        <div class="rating-card">
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star-half-stroke star"></i>
         </div>
 
-        <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
-          text
-          of the printing and typesetting
-          industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
-            class="fa-solid fa-quote-right"></i></p>
+        <div class="card swiper-slide">
 
-      </swiper-slide>
+          <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
 
-      <swiper-slide class="card">
+          <h2>Paulo Guedes da Silva</h2>
 
-        <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
+          <div class="rating-card">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star-half-stroke star"></i>
+          </div>
 
-        <h2>Paulo Guedes da Silva</h2>
+          <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
+            text
+            of the printing and typesetting
+            industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
+              class="fa-solid fa-quote-right"></i></p>
 
-        <div class="rating-card">
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star star"></i>
-          <i class="fa-solid fa-star-half-stroke star"></i>
         </div>
 
-        <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
-          text
-          of the printing and typesetting
-          industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
-            class="fa-solid fa-quote-right"></i></p>
+      </div>
+    </div>
 
-      </swiper-slide>
-
-    </swiper-container>
-
+    <div>
+      <i class="fa-solid fa-hand-pointer"></i>
+    </div>
 
   </section>
 
@@ -510,7 +512,7 @@
 
     <div class="form-container">
 
-      <h1 class="title-contact">Deixe sua mensagem que entraremos em contato</h1>
+      <h1 class="title-form">Deixe sua mensagem que entraremos em contato</h1>
 
       <form action="https://formsubmit.co/matheussaggiorato@gmail.com" method="POST" class="form" autocomplete="off">
 
@@ -542,12 +544,8 @@
 
         <input type="hidden" name="_captcha" value="false" for="recaptcha">
 
-<<<<<<< HEAD
         <input type="hidden" name="_next" value="https://matheus-saggiorato.com/thank-you-page.html"
           for="link da página de agradecimento">
-=======
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you-page.html" for="link da página de agradecimento">
->>>>>>> 7f401d9e1179e80ef46dfd09ec291a7205dd0aff
 
       </form>
     </div>
@@ -620,9 +618,9 @@
   <script defer src="https://kit.fontawesome.com/d2e94242a3.js" crossorigin="anonymous"></script>
   <script defer src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
   <script defer src="./assets/scripts/isotope.pkgd.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script defer src="./assets/scripts/script.js"></script>
-  
+
 </body>
 
 </html>

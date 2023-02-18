@@ -140,6 +140,10 @@
 		margin-top: var(--margin-3);
 	}
 
+	.type-it-title {
+		font-size: var(--font-mobile-title);
+	}
+
 	.subtitle-top {
 		margin-top: var(--margin-2);
 	}

@@ -1,6 +1,9 @@
 #clientes {
     background: var(--main-blue);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .custom-shape-divider-top-1674275839 {
@@ -24,12 +27,14 @@
     fill: var(--light-theme);
 }
 
-.testimonyal-container {
-    margin-bottom: var(--margin-8);
+.swiper {
+    max-width: 350px;
+    width: 90%;
+    height: auto;
 }
 
 .title-clientes {
-    font-size: var(--title-sessions);
+    font-size: var(--font-desktop-title);
     font-weight: 700;
     letter-spacing: .125rem;
     margin-top: var(--margin-8);
@@ -38,8 +43,6 @@
 }
 
 .card {
-    width: 350px;
-    height: auto;
     background: var(--light-theme);
     position: relative;
     display: flex;
@@ -59,7 +62,7 @@
     border-radius: 50%;
     z-index: 1000;
 }
-  
+
 .rating-card {
     display: flex;
     flex-wrap: wrap;
@@ -106,6 +109,22 @@
 .card:hover {
     transform: scale(0.98);
 }
+
+.fa-hand-pointer {
+    font-size: 1.5rem;
+    color: var(--light-theme);
+    animation: mouse-move 2s ease-in-out infinite alternate;
+}
+
+@keyframes mouse-move {
+    0% {
+      transform: translateX(-50px) rotate(-35deg);
+    }
+
+    100% {
+      transform: translateX(50px) rotate(35deg);
+    }
+  }
 
 @media (min-width: 768px) and (max-width: 1023px) {
 

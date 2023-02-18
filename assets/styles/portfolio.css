@@ -7,7 +7,7 @@
     color: var(--main-blue);
     margin-top: var(--margin-8);
     margin-bottom: var(--margin-6);
-    font-size: var(--title-sessions);
+    font-size: var(--font-desktop-title);
     font-weight: 700;
     letter-spacing: 2px;
     text-align: center;
@@ -70,18 +70,6 @@
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {

@@ -34,10 +34,11 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--first-blue);
 }
 
-html {
+html, body {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    position: relative;
 }
 
 body, .body-cases {
