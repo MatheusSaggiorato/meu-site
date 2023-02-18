@@ -65,61 +65,29 @@ function BackToTopFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-
-
-//Carousel
-$(document).ready(function () {
-  $('.testimonyal-container').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    draggable: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-  });
-});
-
-
 //Isotope
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
 
-  var $grid = $('.grid').isotope({
+  const grid = document.querySelector('.grid');
+  const isotope = new Isotope(grid, {
     itemSelector: '.grid-item'
   });
 
   // filter items on button click
-  $('.filter-menu').on('click', 'button', function () {
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
-    return false;
-  });
+  const filterButtons = document.querySelectorAll('.filter-menu button');
+  for (i = 0; i < filterButtons.length; i++) {
+    filterButtons[i].addEventListener('click', function () {
+      const filterValue = this.getAttribute('data-filter');
+      isotope.arrange({ filter: filterValue });
+      return false;
+    });
 
-  $(".filter-menu button").click(function () {
-    $(this).addClass("active");
-    $(this).siblings().removeClass("active");
-  });
-
+    filterButtons[i].addEventListener('click', function () {
+      const siblings = this.parentNode.children;
+      for (i = 0; i < siblings.length; i++) {
+        siblings[i].classList.remove('active');
+      }
+      this.classList.add('active');
+    });
+  }
 });

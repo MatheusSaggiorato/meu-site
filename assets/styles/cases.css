@@ -104,7 +104,7 @@
 
 #back-page-button {
         position: fixed;
-        top: 5.32rem;
+        top: 77px;
         left: 0;
         text-decoration: none;
         text-align: center;
@@ -157,4 +157,10 @@
 .title-case, .title-explication-cases  {
     font-size: var(--font-mobile-title);
 }
+}
+
+@media screen and (max-width: 450px) {
+    #back-page-button {
+        top: 56px;
+    }
 }
