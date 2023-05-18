@@ -30,6 +30,7 @@
     border-radius: 1rem;
     border: none;
     transition: all 300ms linear;
+    cursor: pointer;
 }
 
 .filter-menu button.active,

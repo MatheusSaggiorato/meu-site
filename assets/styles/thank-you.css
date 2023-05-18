@@ -45,6 +45,11 @@ main {
     background: var(--cta-color);
     color: var(--light-theme);
     border: none;
+    cursor: pointer;
+}
+
+.back-page-button:hover {
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 330px) {
