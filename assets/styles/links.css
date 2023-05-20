@@ -17,10 +17,11 @@ body {
   caret-color: transparent;
   color: var(--light-theme);
   letter-spacing: 1px;
+  background: var(--main-blue) url(../images/bg-tech.webp) bottom center/cover no-repeat fixed;
 }
 
 main {
-  background: var(--second-blue);
+  background-color: rgba(38, 117, 166, 0.5);
   max-width: 600px;
   padding: 3rem;
   text-align: center;
@@ -36,6 +37,10 @@ p {
   font-size: 1.5rem;
   font-weight: 900;
   margin: var(--margin-1) 0 var(--margin-4) 0;
+}
+
+h1, p, li {
+  letter-spacing: 2px;
 }
 
 img {
@@ -55,6 +60,28 @@ a {
   margin-right: .8rem;
 }
 
+li:hover .icon {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(-1px, 2px);
+  }
+  25% {
+    transform: translate(1px, -2px);
+  }
+  50% {
+    transform: translate(-1px, 2px);
+  }
+  75% {
+    transform: translate(1px, -2px);
+  }
+  100% {
+    transform: translate(-1px, 2px);
+  }
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -68,7 +95,7 @@ a {
   transition: 0.5s;
   animation: gradient_301 5s ease infinite;
   border: double 4px transparent;
-  background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+  background-image: linear-gradient(var(--medium-dark), var(--medium-dark)),  linear-gradient(137.48deg, var(--dark-blue) 10%,var(--third-blue) 45%, var(--first-blue) 67%, var(--second-blue) 87%);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -82,15 +109,6 @@ a {
   transition: 0.5s;
   backdrop-filter: blur(1rem);
   border-radius: 10px;
-}
-
-strong {
-  z-index: 2;
-  font-family: 'Avalors Personal Use';
-  font-size: 12px;
-  letter-spacing: 5px;
-  color: #FFFFFF;
-  text-shadow: 0 0 4px white;
 }
 
 #glow {
@@ -107,16 +125,8 @@ strong {
   z-index: -1;
 }
 
-.circle:nth-of-type(1) {
-  background: rgba(254, 83, 186, 0.636);
-}
-
-.circle:nth-of-type(2) {
-  background: rgba(142, 81, 234, 0.704);
-}
-
 .btn:hover #container-stars {
-  background-color: #212121;
+  background-color: var(--dark-theme);
 }
 
 .btn:hover {
@@ -124,14 +134,14 @@ strong {
 }
 
 .btn:active {
-  border: double 4px #FE53BB;
+  border: double 4px var(--third-blue);
   background-origin: border-box;
   background-clip: content-box, border-box;
   animation: none;
 }
 
 .btn:active .circle {
-  background: #FE53BB;
+  background: var(--third-blue);
 }
 
 #stars {
