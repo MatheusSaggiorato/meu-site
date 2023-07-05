@@ -1,0 +1,180 @@
+.top-container {
+	min-height: 110vh;
+	height: auto;
+	background: var(--main-blue) url(../images/bg-tech.webp) bottom right/cover no-repeat fixed;
+	padding: 4rem 20rem 4rem 2rem;
+	position: relative;
+}
+
+.title-top {
+	font-size: var(--font-desktop-title);
+	margin-top: 8rem;
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+
+.type-it-title {
+	font-size: var(--font-desktop-title);
+	font-weight: 900;
+}
+
+.subtitle-top,
+.type-it {
+	font-size: var(--font-subtitle);
+	line-height: 150%;
+	letter-spacing: 2px;
+	font-weight: 900;
+}
+
+.subtitle-top,
+.type-it {
+	margin-top: var(--margin-3);
+}
+
+.btn-whats-top,
+.type-it-title {
+	margin-top: 9rem;
+}
+
+.btn-whats-top {
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	color: var(--light-theme);
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size: var(--font-subtitle);
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	border-radius: 1rem;
+	box-shadow: 0 0 20px var(--cta-color);
+}
+
+.btn-whats-top::after {
+	content: "";
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: var(--cta-color);
+	left: 0;
+	top: 0;
+	border-radius: 1rem;
+}
+
+.btn-whats-top::before {
+	content: "";
+	background: linear-gradient(45deg,
+			var(--cta-color), var(--main-blue), var(--cta-color), var(--main-blue),
+			var(--cta-color), var(--main-blue), var(--cta-color), var(--main-blue));
+	position: absolute;
+	top: -6px;
+	left: -6px;
+	background-size: 600%;
+	z-index: -1;
+	width: calc(100% + 16px);
+	height: calc(100% + 16px);
+	filter: blur(8px);
+	animation: glowing 20s linear infinite;
+	transition: opacity .3s ease-in-out;
+	border-radius: 25px;
+
+}
+
+@keyframes glowing {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 400% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.btn-whats-top:hover::after {
+	background: transparent;
+}
+
+.btn-whats-top:active {
+	transform: scale(0.9);
+}
+
+.custom-shape-divider-bottom-1674274096 {
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1674274096 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 40px;
+	transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1674274096 .shape-fill {
+	fill: var(--light-theme);
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+	.top-container {
+		background: var(--main-blue) url(../images/bg-tech-mobile.webp) bottom right/cover no-repeat fixed;
+		padding: 4.375rem 1.875rem;
+	}
+
+	.title-top {
+		font-size: var(--font-mobile-title);
+		margin-top: var(--margin-3);
+	}
+
+	.type-it-title {
+		font-size: var(--font-mobile-title);
+	}
+
+	.subtitle-top {
+		margin-top: var(--margin-2);
+	}
+
+	.btn-whats-top,
+	.type-it-title {
+		margin-top: 7rem;
+	}
+
+	.btn-whats-top {
+		font-size: var(--font-mobile-title);
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.custom-shape-divider-bottom-1674274096 svg {
+		width: calc(113% + 1.3px);
+		height: 35px;
+	}
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+	.custom-shape-divider-bottom-1674274096 svg {
+		width: calc(116% + 1.3px);
+		height: 20px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.top-container {
+		padding: 4rem .75rem;
+	}
+}

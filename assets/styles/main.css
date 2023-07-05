@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url(../font-roboto/woof/Roboto-Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url(../font-roboto/woof/Roboto-Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url(../font-roboto/woof/Roboto-Black.woff) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+body::-webkit-scrollbar {
+    width: .75rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #cfcfcf;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--first-blue);
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body, .body-cases {
+    overflow-x: hidden;
+    color: var(--light-theme);
+}
+
+.sessions {
+    padding: 4rem 1.25rem;
+}

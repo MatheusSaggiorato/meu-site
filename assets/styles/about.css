@@ -1,0 +1,185 @@
+#sobre {
+    background: var(--light-theme);
+    color: var(--dark-blue);
+    position: relative;
+}
+
+.image-container-circle {
+    position: relative;
+}
+
+.my-image {
+    float: right;
+    width: 300px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.image-container-circle::after {
+    content: "";
+    z-index: 1000;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+    border-top: 8px solid var(--first-blue);
+    border-bottom: 8px solid var(--main-blue);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.title-about {
+    font-size: var(--font-desktop-title);
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+    margin-top: var(--margin-8);
+    margin-bottom: var(--margin-6);
+    color: var(--main-blue);
+}
+
+.about-me {
+    font-size: var(--font-body);
+    line-height: 150%;
+    margin-right: 10rem;
+    color: var(--main-blue);
+}
+
+.title-techs {
+    font-size: var(--font-desktop-title);
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+    color: var(--light-theme);
+}
+
+.techs-bg {
+    margin: auto;
+    width: 90%;
+    margin-top: var(--margin-7);
+    margin-bottom: var(--margin-8);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--main-blue);
+}
+
+.techs-container {
+    margin-top: var(--margin-3);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.techs {
+    height: 3rem;
+    color: var(--light-theme);
+    border-radius: 50%;
+    /*o efeito de tooltip nas ".techs" está sendo usado com as mesmas classes da pasta "footer.css"*/
+}
+
+.tip-box:hover .fa-html5 {
+    color: #F16529;
+}
+
+.tip-box:hover .fa-css3-alt {
+    color: #0089CA;
+}
+
+.tip-box:hover .fa-js {
+    color: #F8DC3E;
+}
+
+.tip-box:hover .fa-node {
+    color: #539E43;
+}
+
+.tip-box:hover .fa-git-alt {
+    color: #F03C2E;
+}
+
+.tip-box:hover .fa-wordpress {
+    color: #1B769C;
+}
+
+.tip-box:hover .fa-react {
+    color: #09D9FE;
+}
+
+.tip-box:hover .fa-bootstrap {
+    color: #850AFA;
+}
+
+.tip-box:hover .fa-google {
+    color: #5495E4;
+}
+
+.tip-box:hover .fa-figma {
+    color: #9A54F2;
+}
+
+@media screen and (max-width: 993px) {
+
+    .my-image {
+        float: none;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .image-container-circle::after {
+        left: 50%;
+        margin-left: -145px;
+    }
+
+    .title-about,
+    .title-techs {
+        font-size: var(--font-mobile-title);
+    }
+
+    .about-me {
+        margin-right: 0;
+    }
+
+    .title-techs {
+        font-size: var(--font-mobile-title);
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .my-image {
+        width: 12.5rem;
+    }
+
+    .image-container-circle::after {
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+    }
+
+    .techs-bg {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #sobre {
+        padding: 4rem .75rem;
+    }
+}

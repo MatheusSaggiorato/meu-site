@@ -1,26 +1,573 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <title>Matheus Saggiorato</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="portfólio e serviços de desenvolvedor web, programador web, programador JavaScript">
+  <!-- Google Tag Manager -->
+  <!-- <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MLKBD5B');</script> 
+  End Google Tag Manager -->
+  <link rel="icon" href="./assets/images/logo-com-fundo-sem-nome.svg">
+
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/top-container.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/reset.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/variables.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/menu.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/main.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/about.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/services.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/portfolio.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/contact.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/footer.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/client.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/about.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/services.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/portfolio.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/contact.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/footer.css?v=0.1">
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/main.css?v=0.1">
+  <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link defer rel="stylesheet" type="text/css" href="./assets/styles/client.css?v=0.1">
+
+  <title>Matheus Saggiorato Web Developer</title>
 </head>
+
 <body>
 
-    <header>
-        <img src="./images/logo-sem-nome.png">
-        <a href="https://matheus-saggiorato.com/links/"><button>MY LINKS</button></a>
-    </header>
+  <!-- Google Tag Manager (noscript)
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLKBD5B" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  End Google Tag Manager (noscript) -->
 
-    <div>
-        <h1>I'M CODING! COMING SOON</h1>
-        <lottie-player class="lottie"
-         src="https://assets5.lottiefiles.com/private_files/lf30_vnbcd4ev.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+  <header id="header">
+    <img class="logo" src="./assets/images/logo-com-fundo-sem-nome.svg"
+      alt="logo de Matheus Saggiorato">
+
+    <nav id="nav">
+
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
+
+      <ul id="menu" role="menu">
+        <li role="menuitem"><a class="links-menu" href="#sobre">Quem sou?</a></li>
+        <li role="menuitem"><a class="links-menu" href="#servicos">Serviços</a></li>
+        <!--        <li><a id="btn-dropdown" href="#servicos">Serviços
+            <span class="plus"></span></a>
+          <ul id="sub-menu">
+            <li><a class="links-menu" href="#">Desenvolvimento e manutenção de sites</a></li>
+            <li><a class="links-menu" href="#">Criação de landing pages</a></li>
+            <li><a class="links-menu" href="#">Desenvolvimento web em geral</a></li>
+            <li><a class="links-menu" href="#">Ui/ux design</a></li>
+          </ul>
+        </li> -->
+        <li role="menuitem"><a class="links-menu" href="#portfolio">Portfólio</a></li>
+        <li role="menuitem"><a class="links-menu" href="#clientes">Clientes</a></li>
+        <li role="menuitem"><a class="links-menu" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="top-container">
+
+    <h1 class="title-top">Criamos sites e aplicativos web que transformam a sua ideia em uma presença digital
+      bem-sucedida</h1>
+
+    <h2 class="subtitle-top">Se destaque dos seus concorrentes e venda mais com um posicionamento online eficiente.
+      </h3>
+
+      <a href="https://api.whatsapp.com/send?phone=5554999748017&text=Ol%C3%A1%20Matheus,%20vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os!"
+        target="_blank"><button class="btn-whats-top">Quero ter meu site</button></a>
+
+      <h3 class="type-it-title">O seu site:</h3>
+
+      <p class="type-it" id="type-it"></p>
+
+      <div class="custom-shape-divider-bottom-1674274096">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+  </section>
+
+  <section id="sobre" class="sessions">
+
+    <div class="image-container-circle">
+      <img loading="lazy" class="my-image" src="./assets/images/my-image-site.webp"
+        alt="imagem de Matheus Saggiorato"></img>
+
+    <!--   <img class="my-image" src="./assets/images/my-image-site.webp"
+        alt="imagem de Matheus Saggiorato"></img> -->
     </div>
 
-    <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script defer src="./script.js"></script>
+    <h1 class="title-about">Olá. <br> Eu sou o Matheus Saggiorato!</h1>
+
+    <p class="about-me">Desde cedo, fui guiado pela minha curiosidade e paixão por entender o funcionamento do mundo ao
+      meu redor. Nascido em Passo Fundo, no interior do Rio Grande do Sul, cresci sem acesso à internet, mas isso não me
+      impediu de correr atrás dos meus objetivos.
+      <br>
+      <br>
+      Quando tinha 15 anos, tive a oportunidade de trabalhar em uma grande loja de construção civil, onde
+      fui promovido rapidamente de menor aprendiz a vendedor, e ao trabalhar com empreendedores, descobri minha paixão
+      pelo empreendedorismo, vendas, marketing e tecnologia.
+      <br>
+      <br>
+
+      Mas foi em março de 2022 que tudo mudou. Conheci a programação ao estudar tecnologia mais a fundo, e descobri que
+      tinha encontrado a área da minha vida. Vi ali a oportunidade de criar soluções tecnológicas altamente escaláveis
+      para mim e para outros empreendedores, e desde então, me tornei um programador web.
+      <br>
+      <br>
+      Atualmente, estou dedicado a ajudar você a transformar suas ideias em realidade. Vamos fazer isso juntos?
+    </p>
+
+    <div class="techs-bg">
+
+      <h2 class="title-techs">Principais tecnologias e ferramentas que utilizo:</h2>
+
+      <div class="techs-container">
+
+        <span class="tip-box">
+          <i class="fa-brands fa-html5 techs"></i>
+          <span class="tooltip">HTML 5</span>
+        </span>
+
+        <span class="tip-box">
+          <i class="fa-brands fa-css3-alt techs"></i>
+          <span class="tooltip">CSS 3</span>
+        </span>
+
+        <span class="tip-box">
+          <i class="fa-brands fa-js techs"></i>
+          <span class="tooltip">JavaScript</span>
+        </span>
+
+        <span class="tip-box">
+          <i class="fa-brands fa-react techs"></i>
+          <span class="tooltip">React</span>
+        </span>
+
+        <span class="tip-box">
+          <i class="fa-brands fa-node techs"></i>
+          <span class="tooltip">Node.JS</span>
+        </span>
+
+        <span class="tip-box">
+          <i class="fa-brands fa-git-alt techs"></i>
+          <span class="tooltip">Git</span>
+        </span>
+
+        <span class="tip-box">
+          <i class="fa-brands fa-google techs"></i>
+          <span class="tooltip">Google Tools</span>
+        </span>
+
+        <span class="tip-box">
+          <i class="fa-brands fa-figma techs"></i>
+          <span class="tooltip">Figma</span>
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="servicos" class="sessions">
+
+    <div class="custom-shape-divider-top-1674275574">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <h1 class="title-services">Nossos serviços</h1>
+
+    <div class="services-container">
+
+
+      <div class="service-box">
+        <img loading="lazy" class="service-image" src="./assets/images/service-web-design.webp"
+          alt="desenho gráfico de web-design">
+        <h1 class="service-name">Desenvolvimento de sites, páginas e web apps</h1>
+        <p class="service-description">
+          Criamos seu site, landing-page ou web app, com um design exclusivo, responsivo a todos os tamanhos de tela e
+          que
+          carrega rapidamente, com todas as ferramentas necessárias já integradas. Utilizamos tecnologias e linguagens
+          de programação modernas, como HTML, CSS, JavaScript, entre outras, para garantir a total personalização,
+          velocidade e compatibilidade com todos os navegadores, para assim transformar a presença online do seu
+          empreendimento em uma verdadeira vitrine de sucesso, entregando resultados reais para o seu negócio.
+        </p>
+      </div>
+
+
+      <div class="service-box">
+        <img loading="lazy" class="service-image" src="./assets/images/service-ux.webp"
+          alt="desenho gráfico de ui/ux design">
+        <h1 class="service-name">UI/UX Design</h1>
+        <p class="service-description">
+          Transforme seu design digital em uma verdadeira obra de arte com o nosso serviço de UI/UX Design (“Design de
+          interface e experiência do usuário”). Com a combinação perfeita de eficiência e atratividade, garantimos que
+          sua interface será intuitiva e agradável para seu público-alvo, proporcionando uma experiência positiva que
+          impactará diretamente nos resultados da sua empresa. Aumente suas conversões e alcance seus objetivos com um
+          design único e otimizado para seus usuários.
+        </p>
+      </div>
+
+
+      <div class="service-box">
+        <img loading="lazy" class="service-image" src="./assets/images/service-manutencao.webp"
+          alt="desenho gráfico de manutenção de sites">
+        <h1 class="service-name">Manutenção de sites e páginas</h1>
+        <p class="service-description">
+          Nós oferecemos o serviço de manutenção e atualização de site completo, para que sua presença na internet seja
+          profissional e esteja sempre alinhada aos padrões da web. Não só corrigimos erros e realizamos as edições
+          solicitadas, mas também fazemos análises técnicas para identificar oportunidades de melhoria no desempenho,
+          segurança e usabilidade do site. Assim, você pode ter a certeza de que sua página estará sempre atualizada,
+          segura e gerando resultados ainda mais expressivos para o seu negócio.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="custom-shape-divider-bottom-1674431334">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+  </section>
+
+  <section id="portfolio" class="sessions">
+
+    <h1 class="title-portfolio">Portfólio</h1>
+
+    <div class="filter-menu">
+      <button class="active" data-filter="*">Todos</button>
+      <button data-filter=".ecommerce">Ecommerce</button>
+      <button data-filter=".landing-page">Landing Pages</button>
+      <button data-filter=".automotivo">Automotivo</button>
+      <button data-filter=".web-apps">Web Apps</button>
+    </div>
+
+    <div class="grid">
+
+      <a href="./portfolio/top-car.html" target="_blank">
+        <div class="grid-item automotivo">
+          <img loading="lazy" src="./assets/images/portfolio-Mecânica-Top-Car.webp" alt="imagem da home de um site">
+        </div>
+      </a>
+
+      <div class="grid-item landing-page">
+        <img loading="lazy" src="./assets/images/portfolio1.webp" alt="imagem da home de um site">
+      </div>
+
+      <div class="grid-item ecommerce">
+        <img loading="lazy" src="./assets/images/portfolio2.webp" alt="imagem da home de um site">
+      </div>
+
+      <div class="grid-item automotivo">
+        <img loading="lazy" src="./assets/images/portfolio1.webp" alt="imagem da home de um site">
+      </div>
+
+      <div class="grid-item automotivo">
+        <img loading="lazy" src="./assets/images/portfolio2.webp" alt="imagem da home de um site">
+      </div>
+
+      <div class="grid-item ecommerce">
+        <img loading="lazy" src="./assets/images/portfolio1.webp" alt="imagem da home de um site">
+      </div>
+
+      <div class="grid-item web-apps">
+        <img loading="lazy" src="./assets/images/portfolio2.webp" alt="imagem da home de um site">
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="clientes" class="sessions">
+
+    <div class="custom-shape-divider-top-1674275839">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <h1 class="title-clientes">Nossos clientes</h1>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="card swiper-slide">
+
+          <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
+
+          <h2>Fulano da Silva</h2>
+
+          <div class="rating-card">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+          </div>
+
+          <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
+            text
+            of the printing and typesetting
+            industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
+              class="fa-solid fa-quote-right"></i></p>
+
+        </div>
+
+        <div class="card swiper-slide">
+
+          <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
+
+          <h2>Ciclano da Silva</h2>
+
+          <div class="rating-card">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star-half-stroke star"></i>
+          </div>
+
+          <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
+            text
+            of the printing and typesetting
+            industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
+              class="fa-solid fa-quote-right"></i></p>
+
+        </div>
+
+        <div class="card swiper-slide">
+
+          <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
+
+          <h2>Beltrano da Silva</h2>
+
+          <div class="rating-card">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+          </div>
+
+          <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
+            text
+            of the printing and typesetting
+            industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
+              class="fa-solid fa-quote-right"></i></p>
+
+        </div>
+
+        <div class="card swiper-slide">
+
+          <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
+
+          <h2>Jorge da Silva</h2>
+
+          <div class="rating-card">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star-half-stroke star"></i>
+          </div>
+
+          <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
+            text
+            of the printing and typesetting
+            industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
+              class="fa-solid fa-quote-right"></i></p>
+
+        </div>
+
+        <div class="card swiper-slide">
+
+          <img loading="lazy" class="foto-cliente" src="./assets/images/cliente-fulano.webp" alt="foto de cliente">
+
+          <h2>Paulo Guedes da Silva</h2>
+
+          <div class="rating-card">
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star-half-stroke star"></i>
+          </div>
+
+          <p class="testimony"><i class="fa-solid fa-quote-left"></i>O serviço do Matheus Lorem Ipsum is simply dummy
+            text
+            of the printing and typesetting
+            industry. Lorem Ipsum has been the standard dummy text ever since the last year<i
+              class="fa-solid fa-quote-right"></i></p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div>
+      <i class="fa-solid fa-hand-pointer"></i>
+    </div>
+
+  </section>
+
+  <section id="contato" class="sessions">
+
+
+    <div class="custom-shape-divider-top-1674270001">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <h1 class="title-contact">Informações para contato</h1>
+
+    <div class="container-links-contact">
+
+      <a class="links-contact" href="mailto:matheussaggiorato@gmail.com" target="_blank">
+        <i class="envelope-contact fa-solid fa-envelope"></i>Matheussaggiorato@gmail.com
+      </a>
+
+      <a class="links-contact" href="mailto:matheussaggiorato@gmail.com" target="_blank">
+        <i class="whatsapp-contact fa-brands fa-whatsapp"></i>(54) 99974-8017
+      </a>
+
+      <a class="links-contact" href="mailto:matheussaggiorato@gmail.com" target="_blank">
+        <i class="location-contact fa-solid fa-location-dot"></i>Passo Fundo - RS
+      </a>
+
+    </div>
+
+    <div class="form-container">
+
+      <h1 class="title-form">Deixe sua mensagem que entraremos em contato</h1>
+
+      <form action="https://formsubmit.co/matheussaggiorato@gmail.com" method="POST" class="form" autocomplete="off">
+
+        <div class="input-grouping">
+          <input type="text" name="name" class="input" id="name" data-msg="Campo Obrigátorio" required="required"
+            autocomplete="off">
+          <label for="name" class="user-label">Nome</label>
+        </div>
+
+        <div class="input-grouping">
+          <input type="email" class="input" name="email" id="email" data-rule="email"
+            data-msg="Campo obrigatório com e-mail válido" required="required" autocomplete="off">
+          <label for="email" class="user-label">E-mail</label>
+        </div>
+
+        <div class="input-grouping">
+          <input type="tel" class="input" name="tel" attrname="telephone1" id="subject" data-rule="minlen:4"
+            data-msg="Campo obrigatório" required="required" autocomplete="off" aria-label="telefone">
+          <label for="telephone" class="user-label">Telefone</label>
+        </div>
+
+        <div class="input-grouping">
+          <input type="text" class="input" name="text" data-rule="required" data-msg="Campo obrigatório"
+            required="required" autocomplete="off" aria-label="texto"></input>
+          <label for="message" class="user-label">Mensagem</label>
+        </div>
+
+        <button type="submit" class="form-button" aria-label="enviar mensagem">Enviar</button>
+
+        <input type="hidden" name="_captcha" value="false" for="recaptcha">
+
+        <input type="hidden" name="_next" value="https://matheus-saggiorato.com/thank-you-page.html"
+          for="link da página de agradecimento">
+
+      </form>
+    </div>
+
+    <div class="custom-shape-divider-bottom-1674428492">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+
+  </section>
+
+  <footer class="main-footer">
+
+    <div class="social-midias-container">
+
+      <img loading="lazy" class="logo-footer" src="./assets/images/logo-com-fundo-sem-nome.svg"
+        alt="logo Matheus Saggiorato">
+
+      <a href="https://api.whatsapp.com/send?phone=5554999748017&text=Ol%C3%A1%20Matheus,%20vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os!"
+        target="_blank">
+        <div class="tip-box">
+          <i class="fa-brands fa-whatsapp icon-social-midia">
+          </i>
+          <span class="tooltip">WhatsApp</span>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/matheus-saggiorato" target="_blank">
+        <div class="tip-box">
+          <i class="fa-brands fa-linkedin-in icon-social-midia">
+          </i>
+          <span class="tooltip">Linkedin</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/MatheusSaggiorato" target="_blank">
+        <div class="tip-box">
+          <i class="fa-brands fa-github icon-social-midia">
+          </i>
+          <span class="tooltip">GitHub</span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="copy-footer-container">
+      <p class="copy-footer">&#169; Copyright 2022 Matheus Saggiorato Web Developer</p>
+
+      <a class="termos-footer" href="./termos-de-uso.html" target="_blank">termos de uso</a>
+      <a class="termos-footer" href="./politica-de-privacidade.html" target="_blank">Política de privacidade</a>
+
+    </div>
+
+  </footer>
+
+  <div class="buttons-fixed">
+
+    <a href="https://api.whatsapp.com/send?phone=5554999748017&text=Ol%C3%A1%20Matheus,%20vim%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os!"
+      target="_blank" aria-label="botão de contato pelo whatsapp">
+      <img class="whatsapp-fixed" src="./assets/images/logo-whatsapp.svg" alt="logo do whatsapp">
+    </a>
+
+    <button onclick="BackToTopFunction()" id="backToTop" aria-label="Voltar ao topo da página"><i
+        class="fa-solid fa-angles-up"></i></button>
+  </div>
+
+  <script defer src="https://kit.fontawesome.com/d2e94242a3.js" crossorigin="anonymous"></script>
+  <script defer src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <script defer src="./assets/scripts/isotope.pkgd.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script defer src="./assets/scripts/script.js"></script>
+
 </body>
+
 </html>
